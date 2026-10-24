@@ -4,8 +4,8 @@
 
 **A modern, clean and responsive portfolio website**
 
-[![Live on GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-181717?style=for-the-badge&logo=github)](https://alaminislam3203.github.io/Folioblox/)
-[![Live on Vercel](https://img.shields.io/badge/Vercel-Live-000000?style=for-the-badge&logo=vercel)](https://folioblox-kappa.vercel.app/)
+[![Live on GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-181717?style=for-the-badge&logo=github)](https://github.com/alaminislam3203/Carcarrier-Group.git)
+[![Live on Vercel](https://img.shields.io/badge/Vercel-Live-000000?style=for-the-badge&logo=vercel)](https://carcarrier-group.vercel.app/)
 
 </div>
 
@@ -15,7 +15,7 @@
 
 | Platform | Link |
 |----------|------|
-| 🐙 GitHub Pages | [alaminislam3203.github.io/Folioblox](https://alaminislam3203.github.io/Folioblox/) |
+| 🐙 GitHub Pages | [alaminislam3203.github.io/Carcarrier-Group](https://alaminislam3203.github.io/Carcarrier-Group/) |
 | ▲ Vercel | [carcarrier-group.vercel.app](https://carcarrier-group.vercel.app/) |
 
 ---
