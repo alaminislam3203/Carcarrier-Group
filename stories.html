@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full antialiased">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Shipments. Real Transportation Stories. | Car Carrier Group</title>
+  <meta name="description" content="Explore real shipments handled by Car Carrier Group, from vehicle transportation and freight to equipment and specialty moves." />
+  <link rel="icon" href="./public/branding/favicon.ico" type="image/x-icon" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Local Exo 2 Font & Global Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Tailwind Custom Config -->
+  <script src="js/tailwind.config.js"></script>
+</head>
+<body class="min-h-full flex flex-col bg-white text-[#0a192f] antialiased">
+
+  <!-- ========================================================================= -->
+  <!-- CAR CARRIER GROUP NAVBAR                                                  -->
+  <!-- ========================================================================= -->
+  <header class="sticky top-0 z-40 w-full bg-white border-b border-gray-100 shadow-[0_1px_3px_rgba(0,0,0,0.05)] transition-all duration-200">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-3.5 sm:py-4">
+      
+      <!-- Brand Logo -->
+      <a class="flex items-center group transition-transform duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d2861]" href="./index.html" aria-label="Car Carrier Group Home">
+        <img 
+          src="./public/branding/car-carrier-group-logo.png" 
+          alt="Car Carrier Group" 
+          class="h-14 sm:h-16 w-auto object-contain transition-opacity duration-200 group-hover:opacity-95"
+          width="160"
+          height="64"
+        />
+      </a>
+
+      <!-- Navigation & Action Buttons -->
+      <div class="flex items-center gap-3 lg:gap-10">
+        <!-- Desktop Navigation Links -->
+        <nav aria-label="Primary navigation" class="hidden md:flex items-center gap-7 lg:gap-8 font-exo2">
+          <a class="text-[15px] font-bold text-[#0d2861] border-b-2 border-[#0d2861] transition-colors duration-150 py-1" href="./stories.html">
+            Shipment Stories
+          </a>
+          <a class="text-[15px] font-bold text-[#1f2d3d] hover:text-[#0d2861] transition-colors duration-150 py-1" href="./services.html">
+            Transportation Services
+          </a>
+          <a class="text-[15px] font-bold text-[#1f2d3d] hover:text-[#0d2861] transition-colors duration-150 py-1" href="./resources.html">
+            Resources
+          </a>
+        </nav>
+
+        <!-- Primary CTA Button (Desktop & Tablet) -->
+        <a 
+          href="https://www.carcarriergroup.com/car-shipping-quote?utm_source=ccg-stories&utm_medium=referral&utm_campaign=header" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="hidden sm:inline-flex items-center justify-center rounded-lg bg-[#0d2861] px-5 py-3 text-[15px] font-semibold tracking-wide text-white shadow-sm transition-all duration-200 hover:bg-[#091b42] hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d2861] active:scale-[0.98] font-exo2"
+        >
+          Request a Quote
+        </a>
+
+        <!-- Mobile Menu Toggle Button (Hamburger / Close) -->
+        <button 
+          type="button" 
+          id="mobile-menu-btn" 
+          class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg text-[#0d2861] hover:bg-slate-100 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d2861] md:hidden cursor-pointer" 
+          aria-expanded="false" 
+          aria-controls="mobile-menu" 
+          aria-label="Open navigation menu"
+        >
+          <svg id="menu-icon-hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 block">
+            <path d="M4 5h16"></path>
+            <path d="M4 12h16"></path>
+            <path d="M4 19h16"></path>
+          </svg>
+          <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 hidden">
+            <path d="M18 6 6 18"></path>
+            <path d="m6 6 12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-100 bg-white shadow-lg transition-all duration-200">
+      <nav aria-label="Mobile navigation" class="container mx-auto flex flex-col px-4 py-4 sm:px-6 space-y-1 font-exo2">
+        <a class="mobile-nav-link rounded-lg px-3.5 py-3 text-[15px] font-bold text-[#0d2861] bg-slate-50 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d2861]" href="./stories.html">
+          Shipment Stories
+        </a>
+        <a class="mobile-nav-link rounded-lg px-3.5 py-3 text-[15px] font-bold text-[#1f2d3d] hover:bg-slate-50 hover:text-[#0d2861] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d2861]" href="./services.html">
+          Transportation Services
+        </a>
+        <a class="mobile-nav-link rounded-lg px-3.5 py-3 text-[15px] font-bold text-[#1f2d3d] hover:bg-slate-50 hover:text-[#0d2861] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d2861]" href="./resources.html">
+          Resources
+        </a>
+        <div class="pt-2">
+          <a 
+            class="block w-full rounded-lg bg-[#0d2861] px-4 py-3.5 text-center text-[15px] font-semibold text-white shadow-sm hover:bg-[#091b42] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d2861] active:scale-[0.99]" 
+            href="https://www.carcarriergroup.com/car-shipping-quote?utm_source=ccg-stories&utm_medium=referral&utm_campaign=mobile-header"
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            Request a Quote
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-1">
+    
+    <!-- ========================================================================= -->
+    <!-- STORIES HERO SECTION                                                      -->
+    <!-- ========================================================================= -->
+    <section class="w-full bg-white py-16 sm:py-24 lg:py-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center flex flex-col items-center">
+          <span class="text-[11px] sm:text-xs font-bold tracking-[0.22em] text-[#0d2861] uppercase mb-4 sm:mb-6 block font-exo2">
+            Real Shipments, Real Stories.
+          </span>
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.12] mb-6 font-exo2">
+            <span class="text-[#0a192f]">Real </span><span class="text-[#0d2861]">Shipments.</span><span class="text-[#0a192f]"> Real </span><br class="hidden sm:inline"/><span class="text-[#0d2861]">Transportation</span><span class="text-[#0a192f]"> Stories.</span>
+          </h1>
+          <p class="text-base md:text-[17px] text-slate-500 font-normal leading-relaxed max-w-2xl font-sans">
+            Explore real shipments handled by Car Carrier Group, from vehicle transportation and freight to equipment and specialty moves.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- STORIES GRID & FILTERING ("THE WORK BEHIND THE MOVE")                     -->
+    <!-- ========================================================================= -->
+    <section aria-label="Shipment story results" class="w-full bg-white py-12 sm:py-16">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="mb-10">
+          <h2 class="text-3xl sm:text-4xl font-bold font-exo2 text-[#0a192f] tracking-tight mb-2">The work behind the move</h2>
+          <p class="text-xs sm:text-sm text-slate-500 font-normal">Every story below is a clearly labeled demonstration of how real transportation needs can be understood and coordinated.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="flex items-center gap-2.5 overflow-x-auto pb-1 scrollbar-none mb-10" id="stories-tabs-bar">
+          <button type="button" aria-pressed="true" data-category="All Stories" class="filter-tab whitespace-nowrap px-4 py-2.5 rounded-lg text-xs sm:text-[13px] font-bold font-exo2 transition-colors cursor-pointer shrink-0 bg-[#0d2861] text-white shadow-sm">All Stories</button>
+          <button type="button" aria-pressed="false" data-category="Vehicle Shipping" class="filter-tab whitespace-nowrap px-4 py-2.5 rounded-lg text-xs sm:text-[13px] font-bold font-exo2 transition-colors cursor-pointer shrink-0 bg-white border border-slate-200/80 text-[#0a192f] hover:bg-slate-50 hover:border-slate-300">Vehicle Shipping</button>
+          <button type="button" aria-pressed="false" data-category="Freight" class="filter-tab whitespace-nowrap px-4 py-2.5 rounded-lg text-xs sm:text-[13px] font-bold font-exo2 transition-colors cursor-pointer shrink-0 bg-white border border-slate-200/80 text-[#0a192f] hover:bg-slate-50 hover:border-slate-300">Freight</button>
+          <button type="button" aria-pressed="false" data-category="Heavy Equipment" class="filter-tab whitespace-nowrap px-4 py-2.5 rounded-lg text-xs sm:text-[13px] font-bold font-exo2 transition-colors cursor-pointer shrink-0 bg-white border border-slate-200/80 text-[#0a192f] hover:bg-slate-50 hover:border-slate-300">Heavy Equipment</button>
+          <button type="button" aria-pressed="false" data-category="Classic &amp; Exotic" class="filter-tab whitespace-nowrap px-4 py-2.5 rounded-lg text-xs sm:text-[13px] font-bold font-exo2 transition-colors cursor-pointer shrink-0 bg-white border border-slate-200/80 text-[#0a192f] hover:bg-slate-50 hover:border-slate-300">Classic &amp; Exotic</button>
+        </div>
+
+        <!-- Dynamic Stories Content Container -->
+        <div id="stories-content-container">
+          <!-- Featured Story (Top Large Card) -->
+          <div id="featured-story-slot">
+            <div class="bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-5 mb-8 shadow-sm hover:shadow-md group transition-all duration-300">
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <a class="lg:col-span-6 relative w-full h-[260px] sm:h-[340px] md:h-[380px] rounded-xl overflow-hidden block bg-slate-100" href="/stories/from-houston-to-fairfax-a-college-students-car-shipping-experience-with-car-carrier-group">
+                  <img alt="From Houston to Fairfax: A College Student’s Car Shipping Experience with Car Carrier Group" loading="lazy" decoding="async" class="object-cover w-full h-full story-cover transition-transform duration-500 group-hover:scale-[1.02]" style="object-position:33% 20%" src="public/stories/college-student-jeep-compass-houston-to-fairfax.jpg" />
+                </a>
+                <div class="lg:col-span-6 flex flex-col justify-center lg:pr-6">
+                  <div class="flex items-center gap-3 mb-4">
+                    <span class="bg-slate-100 text-[#0a192f] text-[11px] font-bold font-exo2 tracking-wider px-2.5 py-1 rounded-sm uppercase">Jeep Compass</span>
+                    <span class="text-xs text-slate-400 font-normal">Shipment story</span>
+                  </div>
+                  <div class="flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#0a192f] mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 text-slate-500" aria-hidden="true">
+                      <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>Texas</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 text-slate-400" aria-hidden="true">
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                    <span>Virginia</span>
+                  </div>
+                  <h3 class="text-2xl sm:text-3xl font-bold font-exo2 text-[#0a192f] tracking-tight mb-4 group-hover:text-[#0d2861] transition-colors leading-[1.25]">
+                    <a href="/stories/from-houston-to-fairfax-a-college-students-car-shipping-experience-with-car-carrier-group">
+                      From Houston to Fairfax: A College Student’s Car Shipping Experience with Car Carrier Group
+                    </a>
+                  </h3>
+                  <p class="text-sm sm:text-[15px] text-slate-500 font-normal leading-relaxed mb-6 line-clamp-3">
+                    Shipping a car for college? Learn how Car Carrier Group safely transported a student’s Jeep Compass from Houston, TX to Fairfax, VA. Get a free quote today!
+                  </p>
+                  <div>
+                    <a class="inline-flex items-center gap-1.5 text-sm font-bold font-exo2 text-[#0d2861] hover:text-[#091b42] transition-colors" href="/stories/from-houston-to-fairfax-a-college-students-car-shipping-experience-with-car-carrier-group">
+                      Read full story
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stories Grid Slot -->
+          <div id="grid-stories-slot" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-14">
+            <!-- Rendered by js/main.js dynamically or filled on load -->
+          </div>
+
+          <!-- Empty State (When no stories match filter) -->
+          <div id="no-stories-notice" class="hidden text-center py-16 px-4 bg-slate-50 rounded-2xl border border-dashed border-slate-200">
+            <p class="text-base font-medium text-slate-600 mb-4" id="no-stories-text">No stories found in this category.</p>
+            <button type="button" id="reset-filter-btn" class="px-5 py-2.5 rounded-lg bg-[#0d2861] text-white text-xs font-bold font-exo2 hover:bg-[#091b42] transition-colors">
+              View All Stories
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SECTION: WHY THESE STORIES MATTER                                         -->
+    <!-- ========================================================================= -->
+    <section data-section-reveal="true" class="w-full bg-[#f8fafc] py-16 sm:py-20 lg:py-24 border-t border-slate-200/70">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-12 sm:mb-14">
+          <span class="text-xs sm:text-[13px] font-bold tracking-widest text-[#0d2861] uppercase block mb-3 font-exo2">Why These Stories Matter</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#0a192f] tracking-tight leading-[1.15] mb-3 font-exo2">See How Real Transportation Gets Done</h2>
+          <p class="text-sm sm:text-base text-slate-500 font-normal leading-relaxed">Every case demonstrates the real-time decisions, specialized equipment, and dedicated carrier coordination required to protect your cargo from dispatch to destination.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          
+          <div class="group bg-white rounded-2xl border border-slate-200/90 p-7 sm:p-8 flex flex-col justify-start shadow-[0_2px_8px_rgba(0,0,0,0.03)] hover:shadow-lg hover:border-slate-300 transition-all duration-200">
+            <div class="mb-6 w-12 h-12 rounded-xl bg-orange-50/80 border border-orange-100 flex items-center justify-center text-[#c25e19]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 stroke-[2]" aria-hidden="true">
+                <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#0a192f] tracking-tight mb-3 group-hover:text-[#0d2861] transition-colors font-exo2">Real-world experience</h3>
+            <p class="text-sm sm:text-[15px] text-slate-500 font-normal leading-relaxed">See the decisions and attention that sit behind shipment coordination.</p>
+          </div>
+
+          <div class="group bg-white rounded-2xl border border-slate-200/90 p-7 sm:p-8 flex flex-col justify-start shadow-[0_2px_8px_rgba(0,0,0,0.03)] hover:shadow-lg hover:border-slate-300 transition-all duration-200">
+            <div class="mb-6 w-12 h-12 rounded-xl bg-orange-50/80 border border-orange-100 flex items-center justify-center text-[#c25e19]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 stroke-[2]" aria-hidden="true">
+                <path d="m21 21-4.34-4.34"></path>
+                <circle cx="11" cy="11" r="8"></circle>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#0a192f] tracking-tight mb-3 group-hover:text-[#0d2861] transition-colors font-exo2">Practical transportation insight</h3>
+            <p class="text-sm sm:text-[15px] text-slate-500 font-normal leading-relaxed">Understand the questions that help shape a transportation solution.</p>
+          </div>
+
+          <div class="group bg-white rounded-2xl border border-slate-200/90 p-7 sm:p-8 flex flex-col justify-start shadow-[0_2px_8px_rgba(0,0,0,0.03)] hover:shadow-lg hover:border-slate-300 transition-all duration-200">
+            <div class="mb-6 w-12 h-12 rounded-xl bg-orange-50/80 border border-orange-100 flex items-center justify-center text-[#c25e19]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 stroke-[2]" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                <path d="M2 12h20"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#0a192f] tracking-tight mb-3 group-hover:text-[#0d2861] transition-colors font-exo2">Nationwide capability</h3>
+            <p class="text-sm sm:text-[15px] text-slate-500 font-normal leading-relaxed">Explore the range of transportation needs CCG helps coordinate across the country.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- DIRECT CARRIER DISPATCH CTA BANNER ("ONE QUICK CALL DOES IT ALL!")        -->
+    <!-- ========================================================================= -->
+    <section data-section-reveal="true" class="relative w-full overflow-hidden bg-[#0d2861] py-14 sm:py-16 lg:py-20 text-white border-y border-blue-900/60 font-exo2">
+      <div aria-hidden="true" class="pointer-events-none absolute -top-32 -right-32 h-96 w-96 rounded-full bg-blue-500/15 blur-3xl"></div>
+      <div aria-hidden="true" class="pointer-events-none absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-indigo-500/15 blur-3xl"></div>
+      <div class="container relative mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="rounded-3xl bg-white/[0.04] border border-white/10 p-6 sm:p-10 lg:p-14 backdrop-blur-sm shadow-2xl">
+          
+          <div class="flex items-center justify-center gap-2 mb-3">
+            <span class="inline-flex items-center gap-1.5 rounded-full bg-[#d67d3e]/20 border border-[#d67d3e]/30 px-3.5 py-1 text-xs sm:text-[13px] font-bold uppercase tracking-widest text-[#f59e0b]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-current">
+                <path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z"></path>
+              </svg>
+              Direct Carrier Dispatch
+            </span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white tracking-tight uppercase leading-[1.08] mb-3 max-w-4xl mx-auto">
+            ONE QUICK CALL DOES IT ALL!
+          </h2>
+
+          <div class="grid w-full max-w-5xl grid-cols-1 gap-4 mx-auto md:grid-cols-3 mt-8">
+            
+            <!-- Action Card 1: Call Directly -->
+            <div class="w-full">
+              <a href="tel:8887027322" aria-label="Call Car Carrier Group directly at 888-702-7322" class="group flex min-h-36 w-full flex-col items-center justify-center rounded-2xl border border-white/20 bg-white/[0.08] p-5 text-center shadow-lg transition-all duration-200 hover:border-white/40 hover:bg-white/[0.14] hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                <div class="mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-[#d67d3e] text-white shadow-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-white stroke-none">
+                    <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                  </svg>
+                </div>
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-300">Call us</span>
+                <span class="mt-1 text-xl font-bold tracking-tight text-white transition-colors group-hover:text-amber-300 sm:text-2xl">888-702-7322</span>
+              </a>
+            </div>
+
+            <!-- Action Card 2: Get Instant Quote -->
+            <div class="w-full">
+              <a class="group flex min-h-36 w-full flex-col items-center justify-center rounded-2xl bg-white p-5 text-center shadow-xl transition-all duration-200 hover:bg-slate-100 hover:shadow-2xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" href="https://www.carcarriergroup.com/car-shipping-quote?utm_source=ccg-stories&amp;utm_medium=referral&amp;utm_campaign=fullwidth-cta" target="_blank" rel="noopener noreferrer">
+                <span class="flex items-center gap-2 text-lg font-bold uppercase tracking-wide text-[#0d2861] sm:text-xl">
+                  Get an Instant Quote
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 transition-transform group-hover:translate-x-1">
+                    <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </span>
+                <span class="mt-3 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-xs font-bold uppercase tracking-wide text-slate-500">
+                  <span>Vehicles</span>
+                  <span><span aria-hidden="true" class="mr-2 text-slate-300">•</span>Freight</span>
+                  <span><span aria-hidden="true" class="mr-2 text-slate-300">•</span>Heavy Equipment</span>
+                </span>
+              </a>
+            </div>
+
+            <!-- Action Card 3: Coming Soon Tool -->
+            <div class="flex min-h-36 w-full flex-col items-center justify-center rounded-2xl border border-[#d67d3e]/50 bg-[#d67d3e]/15 p-5 text-center backdrop-blur-xs">
+              <span class="rounded-full border border-[#f59e0b]/40 bg-[#d67d3e]/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-200">
+                Coming soon
+              </span>
+              <p class="mt-3 text-lg font-bold leading-tight tracking-tight text-white sm:text-xl">
+                New Auto Shipping Quote Tool
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Bottom Trust Points -->
+          <div class="mt-8 sm:mt-10 pt-6 border-t border-white/10 flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-xs sm:text-sm font-semibold text-slate-300">
+            <span class="inline-flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#d67d3e]">
+                <circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path>
+              </svg>
+              7-Day-a-Week Staff Access
+            </span>
+            <span class="hidden sm:inline text-white/30">•</span>
+            <span>Accurate Route-Based Pricing</span>
+            <span class="hidden sm:inline text-white/30">•</span>
+            <span>No Upfront Obligation</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 21 YEARS IN BUSINESS SECTION                                              -->
+    <!-- ========================================================================= -->
+    <section data-section-reveal="true" class="w-full bg-[#f8fafc] py-16 sm:py-20 lg:py-24 border-b border-slate-200/80">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+        <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <span class="inline-flex items-center gap-2 text-xs sm:text-[13px] font-bold uppercase tracking-widest text-[#0d2861] bg-blue-50/80 border border-blue-200/60 px-4 py-1.5 rounded-full mb-4 font-exo2">Car Carrier Group</span>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0a192f] tracking-tight mb-4 font-exo2">21 Years in Business</h2>
+          <p class="text-lg sm:text-xl font-bold text-[#0d2861] italic tracking-tight font-exo2">“We are your reliable shipping partner.”</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12 sm:mb-16 font-exo2">
+          
+          <div class="bg-white rounded-2xl border border-slate-200/90 p-7 sm:p-8 flex flex-col items-start shadow-xs hover:shadow-md hover:border-slate-300 transition-all duration-200">
+            <div class="h-12 w-12 rounded-xl bg-blue-50 border border-blue-100/80 flex items-center justify-center text-[#0d2861] mb-5 shadow-xs">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 stroke-[2]">
+                <circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-[#0a192f] tracking-tight mb-2">7 Day a Week Access to Our Staff</h3>
+            <p class="text-sm text-slate-600 leading-relaxed font-sans">Direct access to our dedicated transport coordinators 7 days a week for immediate updates and support.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-slate-200/90 p-7 sm:p-8 flex flex-col items-start shadow-xs hover:shadow-md hover:border-slate-300 transition-all duration-200">
+            <div class="h-12 w-12 rounded-xl bg-blue-50 border border-blue-100/80 flex items-center justify-center text-[#0d2861] mb-5 shadow-xs">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 stroke-[2]">
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-[#0a192f] tracking-tight mb-2">Fully Insured</h3>
+            <p class="text-sm text-slate-600 leading-relaxed font-sans">Complete carrier coverage and cargo insurance verification on every load, protecting your investment.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-slate-200/90 p-7 sm:p-8 flex flex-col items-start shadow-xs hover:shadow-md hover:border-slate-300 transition-all duration-200">
+            <div class="h-12 w-12 rounded-xl bg-blue-50 border border-blue-100/80 flex items-center justify-center text-[#0d2861] mb-5 shadow-xs">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 stroke-[2]">
+                <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+              </svg>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-[#0a192f] tracking-tight mb-2">Tracking for Shipments</h3>
+            <p class="text-sm text-slate-600 leading-relaxed font-sans">Active milestone tracking and proactive dispatch updates from pickup dispatch to delivery completion.</p>
+          </div>
+
+        </div>
+
+        <!-- Leadership Quote Card -->
+        <div class="relative rounded-3xl bg-gradient-to-br from-white via-white to-blue-50/40 border border-blue-100 p-8 sm:p-10 lg:p-12 shadow-sm overflow-hidden font-exo2">
+          <div aria-hidden="true" class="absolute -right-8 -bottom-8 w-44 h-44 bg-blue-100/40 rounded-full blur-2xl pointer-events-none"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-10 w-10 sm:h-12 sm:w-12 text-[#d67d3e]/30 mb-4" aria-hidden="true">
+            <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+            <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+          </svg>
+          <blockquote class="relative z-10 text-lg sm:text-xl md:text-2xl font-bold text-[#0a192f] leading-snug tracking-tight mb-6">
+            “Our clients hire us to score touchdowns. That means seeing every shipment through to a successful delivery with clear communication and accountability every step of the way.”
+          </blockquote>
+          <div class="flex items-center gap-4 pt-4 border-t border-slate-200/70">
+            <div class="h-12 w-12 rounded-full bg-[#0d2861] text-white flex items-center justify-center font-bold text-sm tracking-wider shadow-sm shrink-0">
+              ML
+            </div>
+            <div>
+              <div class="text-base sm:text-lg font-bold text-[#0a192f] tracking-tight">Mitchell Levin</div>
+              <div class="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#d67d3e]">President, Car Carrier Group</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- REAL CUSTOMER REVIEWS ON GOOGLE                                           -->
+    <!-- ========================================================================= -->
+    <section class="w-full bg-[#f8fafc] py-14 sm:py-18 lg:py-20 border-b border-slate-200/80 font-exo2">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10">
+          <div>
+            <div class="inline-flex items-center gap-2 mb-3">
+              <svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"></path>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"></path>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"></path>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"></path>
+              </svg>
+              <span class="text-xs font-bold text-slate-700">Customer reviews</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0a192f] tracking-tight">Real Customer Reviews on Google</h2>
+          </div>
+          <div class="flex items-center gap-3 shrink-0">
+            <a href="https://g.page/car-carrier-group/review?rc" target="_blank" rel="noopener noreferrer" class="text-xs sm:text-sm font-bold text-[#0d2861] hover:text-[#091b42] inline-flex items-center gap-1.5 transition-colors mr-2">
+              <span>View on Google Maps</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5" aria-hidden="true">
+                <path d="M15 3h6v6"></path>
+                <path d="M10 14 21 3"></path>
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3 Google Review Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <div class="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-[#f59e0b] mb-3">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                <span class="text-xs font-semibold text-slate-400 ml-1">5.0</span>
+              </div>
+              <p class="text-sm text-slate-600 leading-relaxed font-sans mb-4">
+                "Mitchell and Car Carrier Group did a fantastic job shipping my vehicle across states. Delivered 2 days early with zero issues. Responsive, honest, and professional!"
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+              <div class="h-10 w-10 rounded-full bg-blue-100 text-[#0d2861] flex items-center justify-center font-bold text-sm">
+                JD
+              </div>
+              <div>
+                <div class="text-sm font-bold text-[#0a192f]">John Davis</div>
+                <div class="text-xs text-slate-400">Verified Google Review</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-[#f59e0b] mb-3">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                <span class="text-xs font-semibold text-slate-400 ml-1">5.0</span>
+              </div>
+              <p class="text-sm text-slate-600 leading-relaxed font-sans mb-4">
+                "Top notch service! Transported heavy equipment with ease. Kept me updated throughout transit and handled our logistics seamlessly. Highly recommended!"
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+              <div class="h-10 w-10 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm">
+                MR
+              </div>
+              <div>
+                <div class="text-sm font-bold text-[#0a192f]">Marcus Roberts</div>
+                <div class="text-xs text-slate-400">Verified Google Review</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-[#f59e0b] mb-3">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                <span class="text-xs font-semibold text-slate-400 ml-1">5.0</span>
+              </div>
+              <p class="text-sm text-slate-600 leading-relaxed font-sans mb-4">
+                "Best freight and auto shipping experience we've had. Transparent pricing with no surprises. The direct dispatch support 7 days a week was a game changer."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+              <div class="h-10 w-10 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-sm">
+                SL
+              </div>
+              <div>
+                <div class="text-sm font-bold text-[#0a192f]">Sarah Lewis</div>
+                <div class="text-xs text-slate-400">Verified Google Review</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER SECTION                                                            -->
+  <!-- ========================================================================= -->
+  <footer class="w-full bg-[#f8fafc] border-t border-slate-300 font-exo2">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-8 pb-14">
+        
+        <!-- Column 1: Brand & Description -->
+        <div class="md:col-span-4 lg:col-span-4 flex flex-col items-start">
+          <a class="mb-6 block" href="./index.html" aria-label="Car Carrier Group Home">
+            <img alt="Car Carrier Group" loading="lazy" width="130" height="70" decoding="async" class="h-16 w-auto object-contain" src="./public/branding/car-carrier-group-logo.png" />
+          </a>
+          <p class="text-xs sm:text-[13px] text-slate-600 font-normal leading-relaxed max-w-xs font-sans">
+            Transportation coordination for vehicles, freight, equipment, and more nationwide.
+          </p>
+        </div>
+
+        <!-- Column 2: Services -->
+        <div class="md:col-span-3 lg:col-span-2 lg:col-start-6">
+          <h4 class="text-sm font-bold text-[#0a192f] mb-4 tracking-tight">Services</h4>
+          <ul class="space-y-3 font-sans">
+            <li><a class="text-xs sm:text-[13px] text-slate-600 hover:text-[#0d2861] transition-colors" href="./services/vehicle-shipping.html">Vehicle Shipping</a></li>
+            <li><a class="text-xs sm:text-[13px] text-slate-600 hover:text-[#0d2861] transition-colors" href="./services/freight.html">Freight</a></li>
+            <li><a class="text-xs sm:text-[13px] text-slate-600 hover:text-[#0d2861] transition-colors" href="./services/heavy-equipment.html">Heavy Equipment</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Company -->
+        <div class="md:col-span-3 lg:col-span-2">
+          <h4 class="text-sm font-bold text-[#0a192f] mb-4 tracking-tight">Company</h4>
+          <ul class="space-y-3 font-sans">
+            <li><a class="text-xs sm:text-[13px] text-[#0d2861] font-bold" href="./stories.html">Shipment Stories</a></li>
+            <li><a class="text-xs sm:text-[13px] text-slate-600 hover:text-[#0d2861] transition-colors" href="./resources.html">Resources</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Connect & Quote -->
+        <div class="md:col-span-2 lg:col-span-3">
+          <h4 class="text-sm font-bold text-[#0a192f] mb-4 tracking-tight">Connect</h4>
+          <p class="text-xs sm:text-[13px] text-slate-600 mb-3 font-sans">Continue to Car Carrier Group's secure quote form.</p>
+          <a class="inline-flex items-center gap-1.5 text-xs sm:text-[13px] font-bold text-[#0d2861] hover:text-[#081a40] transition-colors" href="https://www.carcarriergroup.com/car-shipping-quote?utm_source=ccg-stories&amp;utm_medium=referral&amp;utm_campaign=footer" target="_blank" rel="noopener noreferrer">
+            Request a quote
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] sm:text-xs text-slate-500 font-normal font-sans">
+        <p>© Car Carrier Group. All rights reserved.</p>
+        <p>Quote requests are handled on the Car Carrier Group website.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>

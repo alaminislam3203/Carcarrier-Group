@@ -676,4 +676,10 @@ document.addEventListener('DOMContentLoaded', () => {
           filterCategory('All Stories', allTab);
         });
       }
+
+      // Auto-populate stories if gridSlot is empty (e.g. on stories.html)
+      if (gridSlot && gridSlot.children.length === 0) {
+        const allTab = document.querySelector('#stories-tabs-bar .filter-tab[data-category="All Stories"]');
+        filterCategory('All Stories', allTab);
+      }
     });
