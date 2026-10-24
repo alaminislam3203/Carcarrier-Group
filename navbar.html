@@ -1,0 +1,145 @@
+<!-- ========================================================================= -->
+<!-- CAR CARRIER GROUP NAVBAR COMPONENT                                         -->
+<!-- Same-to-same design from https://stories.carcarriergroup.com/               -->
+<!-- Technologies: HTML5, Tailwind CSS, JavaScript                             -->
+<!-- Font: Exo 2 (from ./public/fonts/exo_2/)                                   -->
+<!-- ========================================================================= -->
+
+<header class="sticky top-0 z-40 w-full bg-white border-b border-gray-100 shadow-[0_1px_3px_rgba(0,0,0,0.05)] transition-all duration-200">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-3.5 sm:py-4">
+    
+    <!-- Brand Logo -->
+    <a class="flex items-center group transition-transform duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d2861]" href="./index.html" aria-label="Car Carrier Group Home">
+      <img 
+        src="./public/branding/car-carrier-group-logo.png" 
+        alt="Car Carrier Group" 
+        class="h-14 sm:h-16 w-auto object-contain transition-opacity duration-200 group-hover:opacity-95"
+        width="160"
+        height="64"
+      />
+    </a>
+
+    <!-- Navigation & Action Buttons -->
+    <div class="flex items-center gap-3 lg:gap-10">
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Primary navigation" class="hidden md:flex items-center gap-7 lg:gap-8 font-exo2">
+        <a class="text-[15px] font-bold text-[#1f2d3d] hover:text-[#0d2861] transition-colors duration-150 py-1" href="#stories">
+          Shipment Stories
+        </a>
+        <a class="text-[15px] font-bold text-[#1f2d3d] hover:text-[#0d2861] transition-colors duration-150 py-1" href="#services">
+          Transportation Services
+        </a>
+        <a class="text-[15px] font-bold text-[#1f2d3d] hover:text-[#0d2861] transition-colors duration-150 py-1" href="#resources">
+          Resources
+        </a>
+      </nav>
+
+      <!-- Primary CTA Button (Desktop & Tablet) -->
+      <a 
+        href="https://www.carcarriergroup.com/car-shipping-quote?utm_source=ccg-stories&utm_medium=referral&utm_campaign=header" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="hidden sm:inline-flex items-center justify-center rounded-lg bg-[#0d2861] px-5 py-3 text-[15px] font-semibold tracking-wide text-white shadow-sm transition-all duration-200 hover:bg-[#091b42] hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d2861] active:scale-[0.98]"
+      >
+        Request a Quote
+      </a>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button 
+        type="button" 
+        id="mobile-menu-btn" 
+        class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg text-[#0d2861] hover:bg-slate-100 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d2861] md:hidden cursor-pointer" 
+        aria-expanded="false" 
+        aria-controls="mobile-menu" 
+        aria-label="Open navigation menu"
+      >
+        <!-- Hamburger Icon -->
+        <svg id="menu-icon-hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 block">
+          <path d="M4 5h16"></path>
+          <path d="M4 12h16"></path>
+          <path d="M4 19h16"></path>
+        </svg>
+        <!-- Close Icon -->
+        <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 hidden">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-slate-100 bg-white shadow-lg transition-all duration-200">
+    <nav aria-label="Mobile navigation" class="container mx-auto flex flex-col px-4 py-4 sm:px-6 space-y-1 font-exo2">
+      <a class="mobile-nav-link rounded-lg px-3.5 py-3 text-[15px] font-bold text-[#1f2d3d] hover:bg-slate-50 hover:text-[#0d2861] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d2861]" href="#stories">
+        Shipment Stories
+      </a>
+      <a class="mobile-nav-link rounded-lg px-3.5 py-3 text-[15px] font-bold text-[#1f2d3d] hover:bg-slate-50 hover:text-[#0d2861] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d2861]" href="#services">
+        Transportation Services
+      </a>
+      <a class="mobile-nav-link rounded-lg px-3.5 py-3 text-[15px] font-bold text-[#1f2d3d] hover:bg-slate-50 hover:text-[#0d2861] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d2861]" href="#resources">
+        Resources
+      </a>
+      <div class="pt-2">
+        <a 
+          class="block w-full rounded-lg bg-[#0d2861] px-4 py-3.5 text-center text-[15px] font-semibold text-white shadow-sm hover:bg-[#091b42] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d2861] active:scale-[0.99]" 
+          href="https://www.carcarriergroup.com/car-shipping-quote?utm_source=ccg-stories&utm_medium=referral&utm_campaign=mobile-header"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Request a quote from Car Carrier Group
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  // Mobile Menu Handler
+  (function initNavbar() {
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconHamburger = document.getElementById('menu-icon-hamburger');
+    const iconClose = document.getElementById('menu-icon-close');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    if (!menuBtn || !mobileMenu) return;
+
+    function toggleMenu(show) {
+      const isExpanded = show !== undefined ? show : menuBtn.getAttribute('aria-expanded') !== 'true';
+      menuBtn.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+
+      if (isExpanded) {
+        mobileMenu.classList.remove('hidden');
+        if (iconHamburger) iconHamburger.classList.add('hidden');
+        if (iconClose) iconClose.classList.remove('hidden');
+      } else {
+        mobileMenu.classList.add('hidden');
+        if (iconHamburger) iconHamburger.classList.remove('hidden');
+        if (iconClose) iconClose.classList.add('hidden');
+      }
+    }
+
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMenu();
+    });
+
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', () => toggleMenu(false));
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!mobileMenu.contains(event.target) && !menuBtn.contains(event.target)) {
+        toggleMenu(false);
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && menuBtn.getAttribute('aria-expanded') === 'true') {
+        toggleMenu(false);
+        menuBtn.focus();
+      }
+    });
+  })();
+</script>
