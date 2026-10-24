@@ -543,7 +543,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return `
           <div class="bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-5 mb-8 shadow-sm hover:shadow-md group transition-all duration-300">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              <a class="lg:col-span-6 relative w-full h-[260px] sm:h-[340px] md:h-[380px] rounded-xl overflow-hidden block bg-slate-100" href="/stories/${story.slug}">
+              <a class="lg:col-span-6 relative w-full h-[260px] sm:h-[340px] md:h-[380px] rounded-xl overflow-hidden block bg-slate-100" href="./story-detail.html?slug=${story.slug}">
                 <img alt="${escapeHtml(story.imageAlt || story.title)}" loading="lazy" decoding="async" class="object-cover w-full h-full story-cover transition-transform duration-500 group-hover:scale-[1.02]" style="object-position: ${posX}% ${posY}%" src="${story.image}" />
               </a>
               <div class="lg:col-span-6 flex flex-col justify-center lg:pr-6">
@@ -552,11 +552,11 @@ document.addEventListener('DOMContentLoaded', () => {
                   <span class="text-xs text-slate-400 font-normal">Shipment story</span>
                 </div>
                 ${locationMarkup}
-                <a href="/stories/${story.slug}">
+                <a href="./story-detail.html?slug=${story.slug}">
                   <h3 class="text-2xl sm:text-3xl font-bold font-exo2 text-[#0a192f] leading-snug tracking-tight mb-4 hover:text-[#0d2861] transition-colors">${escapeHtml(story.title)}</h3>
                 </a>
                 <p class="text-sm sm:text-base text-slate-500 font-normal leading-relaxed mb-6 max-w-xl line-clamp-3">${escapeHtml(story.metaDescription || '')}</p>
-                <a class="inline-flex items-center gap-1.5 text-sm font-bold font-exo2 text-[#0d2861] hover:text-[#091b42] transition-colors" href="/stories/${story.slug}">
+                <a class="inline-flex items-center gap-1.5 text-sm font-bold font-exo2 text-[#0d2861] hover:text-[#091b42] transition-colors" href="./story-detail.html?slug=${story.slug}">
                   Read Full Story
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true">
                     <path d="M5 12h14"></path>
@@ -582,17 +582,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         return `
           <div class="bg-white border border-slate-200/80 rounded-2xl overflow-hidden flex flex-col shadow-sm hover:shadow-md group transition-all duration-300">
-            <a class="relative w-full aspect-[16/10] block overflow-hidden bg-slate-100" href="/stories/${story.slug}">
+            <a class="relative w-full aspect-[16/10] block overflow-hidden bg-slate-100" href="./story-detail.html?slug=${story.slug}">
               <img alt="${escapeHtml(story.imageAlt || story.title)}" loading="lazy" decoding="async" class="object-cover w-full h-full story-cover transition-transform duration-500 group-hover:scale-105" style="object-position: ${posX}% ${posY}%" src="${story.image}" />
             </a>
             <div class="p-6 flex flex-col flex-1">
               <span class="text-[11px] font-bold font-exo2 tracking-wider text-slate-700 uppercase mb-3">${escapeHtml(story.shipmentType || "Shipment")}</span>
               ${locationMarkup}
-              <a href="/stories/${story.slug}">
+              <a href="./story-detail.html?slug=${story.slug}">
                 <h3 class="text-lg font-bold font-exo2 text-[#0a192f] tracking-tight mb-3 line-clamp-1 hover:text-[#0d2861] transition-colors">${escapeHtml(story.title)}</h3>
               </a>
               <p class="text-xs sm:text-sm text-slate-500 font-normal leading-relaxed mb-6 flex-1 line-clamp-2">${escapeHtml(story.metaDescription || '')}</p>
-              <a class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold font-exo2 text-[#0d2861] hover:text-[#091b42] transition-colors pt-2" href="/stories/${story.slug}">
+              <a class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold font-exo2 text-[#0d2861] hover:text-[#091b42] transition-colors pt-2" href="./story-detail.html?slug=${story.slug}">
                 Read Story
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5" aria-hidden="true">
                   <path d="M5 12h14"></path>
