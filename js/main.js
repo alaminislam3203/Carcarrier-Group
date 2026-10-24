@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // =========================================================================
       // DYNAMIC 1:1 REPLICA STORIES FILTERING & RENDERING SYSTEM
       // =========================================================================
-      const allStoriesData = [
+      let allStoriesData = [
   {
     "_id": "6adbe2959c41e8a898fd9295",
     "title": "Georgia to California: A Car Delivered 4 Days Ahead of Schedule!",
@@ -681,5 +681,29 @@ document.addEventListener('DOMContentLoaded', () => {
       if (gridSlot && gridSlot.children.length === 0) {
         const allTab = document.querySelector('#stories-tabs-bar .filter-tab[data-category="All Stories"]');
         filterCategory('All Stories', allTab);
+      }
+
+      // Load from public/stories.json if served over HTTP/HTTPS
+      if (window.location.protocol.startsWith('http')) {
+        const jsonPath = window.location.pathname.includes('/services/') || window.location.pathname.includes('/resources/') 
+          ? '../public/stories.json' 
+          : './public/stories.json';
+
+        fetch(jsonPath)
+          .then(res => {
+            if (res.ok) return res.json();
+            throw new Error('Network response not ok');
+          })
+          .then(data => {
+            if (Array.isArray(data) && data.length > 0) {
+              allStoriesData = data;
+              const activeTab = document.querySelector('#stories-tabs-bar .filter-tab[aria-pressed="true"]');
+              const activeCategory = activeTab ? activeTab.getAttribute('data-category') : 'All Stories';
+              filterCategory(activeCategory, activeTab);
+            }
+          })
+          .catch(() => {
+            // Keep embedded fallback
+          });
       }
     });

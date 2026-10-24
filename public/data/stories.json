@@ -1,0 +1,262 @@
+[
+  {
+    "_id": "6adbe2959c41e8a898fd9295",
+    "title": "Georgia to California: A Car Delivered 4 Days Ahead of Schedule!",
+    "slug": "georgia-to-california-a-car-delivered-4-days-ahead-of-schedule",
+    "metaDescription": "Ship your car from Georgia to California with Car Carrier Group. Enjoy responsive communication and reliable cross-country auto transport. Get a quote today!",
+    "pickupLocation": "Georgia",
+    "destination": "California",
+    "shipmentType": "Vehicle",
+    "shipmentStatus": "delivered",
+    "createdAt": "2026-10-23T22:41:25.396Z",
+    "updatedAt": "2026-10-24T16:05:02.001Z",
+    "serviceLine": "vehicle",
+    "isPublished": true,
+    "image": "public/stories/georgia-to-california-a-car-delivered-4-days-ahead-of-schedule.jpg",
+    "imageAlt": "",
+    "coverPosition": {
+      "x": 2,
+      "y": 7
+    }
+  },
+  {
+    "_id": "6adbe0ba9c41e8a898fd927a",
+    "title": "Humvee Delivered on Time: Professional Military Vehicle Transport You Can Trust",
+    "slug": "humvee-delivered-on-time-professional-military-vehicle-transport-you-can-trust",
+    "metaDescription": "Ship your Humvee from Georgia to Florida with Car Carrier Group. Discover professional vehicle transport, clear communication, and dependable delivery.",
+    "pickupLocation": "Albany, Georgia",
+    "destination": "South Florida",
+    "shipmentType": "Humvee",
+    "shipmentStatus": "delivered",
+    "createdAt": "2026-10-23T22:33:30.713Z",
+    "updatedAt": "2026-10-24T16:16:30.846Z",
+    "serviceLine": "vehicle",
+    "isPublished": true,
+    "image": "public/stories/humvee-delivered-on-time-professional-military-vehicle-transport-you-can-trust.jpg",
+    "imageAlt": "",
+    "coverPosition": {
+      "x": 38,
+      "y": 10
+    }
+  },
+  {
+    "_id": "6adbdde79c41e8a898fd9265",
+    "title": "From the Bay Area to Southern California: A Smooth Car Shipping Experience.",
+    "slug": "from-the-bay-area-to-southern-california-a-smooth-car-shipping-experience",
+    "metaDescription": "Ship your car from the Bay Area to Southern California with Car Carrier Group. Enjoy clear communication and professional service. Request a quote today!",
+    "pickupLocation": "Bay Area",
+    "destination": "Southern California",
+    "shipmentType": "Vehicle",
+    "shipmentStatus": "delivered",
+    "createdAt": "2026-10-23T22:21:27.938Z",
+    "updatedAt": "2026-10-24T16:23:54.594Z",
+    "serviceLine": "vehicle",
+    "isPublished": true,
+    "image": "public/stories/from-the-bay-area-to-southern-california-a-smooth-car-shipping-experience.jpg",
+    "imageAlt": "",
+    "coverPosition": {
+      "x": 15,
+      "y": 5
+    }
+  },
+  {
+    "_id": "6adbdb739c41e8a898fd9247",
+    "title": "A Classic Car Dream Delivered: Shipping a 1965 Buick Skylark from Minnesota to California",
+    "slug": "a-classic-car-dream-delivered-shipping-a-1965-buick-skylark-from-minnesota-to-california",
+    "metaDescription": "Ship your classic car from Minnesota to California with Car Carrier Group. Discover reliable vintage car transport solutions and request a quote today.",
+    "pickupLocation": "Minnesota",
+    "destination": "California",
+    "shipmentType": "1965 Buick Skylark",
+    "shipmentStatus": "delivered",
+    "createdAt": "2026-10-23T22:10:59.800Z",
+    "updatedAt": "2026-10-24T16:38:02.356Z",
+    "serviceLine": "vehicle",
+    "isPublished": true,
+    "image": "public/stories/a-classic-car-dream-delivered-shipping-a-1965-buick-skylark-from-minnesota-to-california.jpg",
+    "imageAlt": "",
+    "coverPosition": {
+      "x": 50,
+      "y": 20
+    }
+  },
+  {
+    "_id": "6ada80f19c41e8a898fd912e",
+    "title": "From Houston to Fairfax: A College Student’s Car Shipping Experience with Car Carrier Group",
+    "slug": "from-houston-to-fairfax-a-college-students-car-shipping-experience-with-car-carrier-group",
+    "metaDescription": "Shipping your car to college? Car Carrier Group helps students arrange reliable auto transport from Houston to Fairfax and nationwide. Get a quote today.",
+    "pickupLocation": "Texas",
+    "destination": "Virginia",
+    "shipmentType": "Jeep Compass",
+    "shipmentStatus": "delivered",
+    "createdAt": "2026-10-22T21:32:33.164Z",
+    "updatedAt": "2026-10-24T15:45:16.745Z",
+    "serviceLine": "vehicle",
+    "isPublished": true,
+    "image": "public/stories/from-houston-to-fairfax-a-college-students-car-shipping-experience-with-car-carrier-group.jpg",
+    "imageAlt": "",
+    "coverPosition": {
+      "x": 33,
+      "y": 20
+    }
+  },
+  {
+    "_id": "6ada51639c41e8a898fd9102",
+    "title": "From Military HMMWV Transport to Kubota Tractor Shipping: A Customer’s Second Experience with Car Carrier Group",
+    "slug": "from-military-hmmwv-transport-to-kubota-tractor-shipping-a-customers-second-experience-with-car-carrier-group",
+    "metaDescription": "Ship military HMMWVs, trailers, and Kubota tractors with Car Carrier Group. Get reliable equipment transport solutions and request your shipping quote today.",
+    "pickupLocation": "Hampshire",
+    "destination": "Georgia",
+    "shipmentType": "Military HMMWV",
+    "shipmentStatus": "delivered",
+    "createdAt": "2026-10-22T18:09:39.846Z",
+    "updatedAt": "2026-10-24T16:13:33.686Z",
+    "serviceLine": "vehicle",
+    "isPublished": true,
+    "image": "public/stories/from-military-hmmwv-transport-to-kubota-tractor-shipping-a-customers-second-experience-with-car-carrier-group.jpg",
+    "imageAlt": "",
+    "coverPosition": {
+      "x": 2,
+      "y": 9
+    }
+  },
+  {
+    "_id": "6ada4c8e9c41e8a898fd90d5",
+    "title": "Shipping a Classic 1960 C1 Corvette from California to Florida: A Customer Success Story",
+    "slug": "shipping-a-classic-1960-c1-corvette-from-california-to-florida-a-customer-success-story",
+    "metaDescription": "Ship your Corvette from California to Florida with Car Carrier Group. Enjoy reliable service, clear communication, and personalized classic car shipping quotes.",
+    "pickupLocation": "California",
+    "destination": "Florida",
+    "shipmentType": "1959 Corvette",
+    "shipmentStatus": "delivered",
+    "createdAt": "2026-10-22T17:49:02.507Z",
+    "updatedAt": "2026-10-24T16:44:18.684Z",
+    "serviceLine": "vehicle",
+    "isPublished": true,
+    "image": "public/stories/shipping-a-classic-1960-c1-corvette-from-california-to-florida-a-customer-success-story.jpg",
+    "imageAlt": "Content of the embedded image:  A photograph of a classic blue 1959 Chevrolet Corvette C1 convertible.  The car is in motion on a coastal road at sunset.  Hills and the ocean are visible in the background, out of focus.  The car is the primary focus, shown from the front-quarter perspective.",
+    "coverPosition": {
+      "x": 9,
+      "y": 3
+    }
+  },
+  {
+    "_id": "6ad10f1d0d3b61242e689587",
+    "title": "Pallet Shipping Problem Solved: Moving a Wacker Neuson Vibratory Compactor",
+    "slug": "pallet-shipping-problem-solved-moving-a-wacker-neuson-vibratory-compactor",
+    "metaDescription": "Need pallet shipping? Car Carrier Group solves LTL freight challenges with reliable transport for palletized vibratory compactors. Get a quote today..",
+    "pickupLocation": "Satillo,MS",
+    "destination": "Brentwood,N.Y.",
+    "shipmentType": "Wacker Neuson Vibratory Compactor",
+    "shipmentStatus": "in_transit",
+    "createdAt": "2026-10-15T17:36:29.333Z",
+    "updatedAt": "2026-10-24T16:57:23.028Z",
+    "serviceLine": "freight",
+    "isPublished": true,
+    "image": "public/stories/pallet-shipping-problem-solved-moving-a-wacker-neuson-vibratory-compactor.jpg",
+    "imageAlt": "",
+    "coverPosition": {
+      "x": 50,
+      "y": 50
+    }
+  },
+  {
+    "_id": "6ad0ee8c0d3b61242e689477",
+    "title": "From California to Massachusetts: Personalized Car Shipping Service That Makes Customers Feel Like #1",
+    "slug": "from-california-to-massachusetts-personalized-car-shipping-service-that-makes-customers-feel-like-1",
+    "metaDescription": "Discover how Car Carrier Group helped Anissa ship her son’s car from California to Massachusetts with personal service, clear communication, and pickup support.",
+    "pickupLocation": "California",
+    "destination": "Massachusetts",
+    "shipmentType": "Mazda CX-5 crossover SUV",
+    "shipmentStatus": "delivered",
+    "createdAt": "2026-10-15T15:17:32.918Z",
+    "updatedAt": "2026-10-15T17:30:58.086Z",
+    "serviceLine": "vehicle",
+    "isPublished": true,
+    "image": "public/stories/from-california-to-massachusetts-personalized-car-shipping-service-that-makes-customers-feel-like-1.jpg",
+    "imageAlt": "Image Description:  A red SUV rests on a flatbed car trailer outdoors under a clear blue sky with mountains in the background. In the top right corner, the blue and white \"CAR CARRIER GROUP\" logo displays the text \"CAR CARRIER GROUP\" and \"YOUR RELIABLE SHIPPING PARTNER",
+    "coverPosition": {
+      "x": 50,
+      "y": 50
+    }
+  },
+  {
+    "_id": "6ad0e7c80d3b61242e689463",
+    "title": "From Texas to California: A Parent’s Peace of Mind with Car Carrier Group",
+    "slug": "from-texas-to-california-a-parents-peace-of-mind-with-car-carrier-group",
+    "metaDescription": "Discover Paul Wood’s experience shipping his daughter’s car from Texas to California with Car Carrier Group’s reliable service and professional drivers.",
+    "pickupLocation": "Texas",
+    "destination": "California",
+    "shipmentType": "Volvo S90",
+    "shipmentStatus": "delivered",
+    "createdAt": "2026-10-15T14:48:40.729Z",
+    "updatedAt": "2026-10-21T21:51:20.467Z",
+    "serviceLine": "vehicle",
+    "isPublished": true,
+    "image": "public/stories/from-texas-to-california-a-parents-peace-of-mind-with-car-carrier-group.jpg",
+    "imageAlt": "Image description: A silver Volvo S90 sedan loaded on a transport trailer at night. Header text reads \"CAR CARRIER GROUP - PREMIUM AUTO LOGISTICS. SAFE, SECURE, PROFESSIONAL.\" The central logo reads \"CAR CARRIER GROUP - YOUR RELIABLE SHIPPING PARTNER.\"",
+    "coverPosition": {
+      "x": 50,
+      "y": 50
+    }
+  },
+  {
+    "_id": "6acd0f112683f5724c0d9105",
+    "title": "LTL Shipment",
+    "slug": "transport-tool-boxes-on-pallets",
+    "metaDescription": "LTL Shipment.  Pallet transport Tool Box Shipping",
+    "pickupLocation": "Red rock,AZ",
+    "destination": "South River,N.J.",
+    "shipmentType": "LTL",
+    "shipmentStatus": "in_transit",
+    "createdAt": "2026-10-12T16:47:13.923Z",
+    "updatedAt": "2026-10-13T17:52:49.834Z",
+    "serviceLine": "freight",
+    "isPublished": true,
+    "image": "public/stories/transport-tool-boxes-on-pallets.jpg",
+    "imageAlt": "LTL car Shipping by car carrier group",
+    "coverPosition": {
+      "x": 50,
+      "y": 50
+    }
+  },
+  {
+    "_id": "6ac7bff72683f5724c0d8c5b",
+    "title": "Ship Humvee Limo",
+    "slug": "ship-humvee-limo",
+    "metaDescription": "Need to ship a Hummer limo or heavy vehicle? Car Carrier Group handled the nationwide transport of a 39-ft, 14-passenger Humvee limo, providing reliable freight, vehicle, and heavy equipment shipping from pickup to delivery.",
+    "pickupLocation": "Washington",
+    "destination": "Texas",
+    "shipmentType": "Heavy equipment",
+    "shipmentStatus": "delivered",
+    "createdAt": "2026-10-08T16:08:23.757Z",
+    "updatedAt": "2026-10-13T04:36:50.813Z",
+    "serviceLine": "heavy-equipment",
+    "isPublished": true,
+    "image": "public/stories/ship-humvee-limo.jpg",
+    "imageAlt": "Humvee Limo on trailer",
+    "coverPosition": {
+      "x": 50,
+      "y": 50
+    }
+  },
+  {
+    "_id": "6abe7d497ad892f5bdf164e5",
+    "title": "Vehicle Shipping, General Freight Shipping, Heavy Equipment Shipping",
+    "slug": "vehicle-shipping-general-freight-shipping-heavy-equipment-shipping",
+    "metaDescription": "We transported this Humvee to Aladdin,WY from Florida 6 months ago and now they are moving their warehouse to Dayton,NV.   Happy to help our clients when needed.  Car Carrier Group loves coming through for our clients.",
+    "pickupLocation": "Aladdin,",
+    "destination": "Dayton",
+    "shipmentType": "Vehicle Transport",
+    "shipmentStatus": "in_transit",
+    "createdAt": "2026-10-01T15:33:29.767Z",
+    "updatedAt": "2026-10-08T11:41:23.094Z",
+    "serviceLine": "vehicle",
+    "isPublished": true,
+    "image": "public/stories/vehicle-shipping-general-freight-shipping-heavy-equipment-shipping.jpg",
+    "imageAlt": "2000 Am General M9998",
+    "coverPosition": {
+      "x": 50,
+      "y": 50
+    }
+  }
+]
