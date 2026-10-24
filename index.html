@@ -461,354 +461,236 @@
 
     <!-- ========================================================================= -->
     <!-- SECTION: BROWSE SHIPMENT STORIES ("THE WORK BEHIND THE MOVE")              -->
-    <!-- ========================================================================= -->
-    <section id="stories" aria-label="Shipment stories" class="w-full bg-white py-16 sm:py-24">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <!-- Section Header -->
-        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
-          <div class="max-w-2xl">
-            <span class="text-xs sm:text-[13px] font-bold tracking-widest text-[#0d2861] uppercase block mb-3 font-exo2">
-              Browse Shipment Stories
-            </span>
-            <h2 class="text-3xl sm:text-4xl lg:text-[44px] font-bold text-[#0a192f] tracking-tight leading-[1.15] font-exo2">
-              The work behind the move
-            </h2>
-          </div>
-          <p class="text-xs sm:text-sm text-slate-500 font-normal leading-relaxed max-w-sm">
-            Every story below is a clearly labeled demonstration of how real transportation needs can be understood and coordinated.
-          </p>
-        </div>
+    <section id="stories" aria-busy="false" aria-label="Shipment stories" class="w-full bg-white py-16 sm:py-32">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+<div class="max-w-2xl">
+<span class="text-xs sm:text-[13px] font-bold font-exo2 tracking-widest text-[#0d2861] uppercase block mb-3">Browse Shipment Stories</span>
+<h2 class="text-3xl sm:text-4xl lg:text-[44px] font-bold font-exo2 text-[#0a192f] tracking-tight leading-[1.15]">The work behind the move</h2>
+</div>
+<p class="text-xs sm:text-sm text-slate-500 font-normal leading-relaxed max-w-sm">Every story below is a clearly labeled demonstration of how real transportation needs can be understood and coordinated.</p>
+</div>
+<div class="flex items-center gap-2.5 overflow-x-auto pb-1 scrollbar-none mb-10">
+<button type="button" aria-pressed="true" data-filter="all" class="filter-tab whitespace-nowrap px-4 py-2.5 rounded-lg text-xs sm:text-[13px] font-bold font-exo2 transition-colors cursor-pointer shrink-0 bg-[#0d2861] text-white shadow-sm">All Stories</button>
+<button type="button" aria-pressed="false" data-filter="vehicle" class="filter-tab whitespace-nowrap px-4 py-2.5 rounded-lg text-xs sm:text-[13px] font-bold font-exo2 transition-colors cursor-pointer shrink-0 bg-white border border-slate-200/80 text-[#0a192f] hover:bg-slate-50 hover:border-slate-300">Vehicle Shipping</button>
+<button type="button" aria-pressed="false" data-filter="freight" class="filter-tab whitespace-nowrap px-4 py-2.5 rounded-lg text-xs sm:text-[13px] font-bold font-exo2 transition-colors cursor-pointer shrink-0 bg-white border border-slate-200/80 text-[#0a192f] hover:bg-slate-50 hover:border-slate-300">Freight</button>
+<button type="button" aria-pressed="false" data-filter="heavy" class="filter-tab whitespace-nowrap px-4 py-2.5 rounded-lg text-xs sm:text-[13px] font-bold font-exo2 transition-colors cursor-pointer shrink-0 bg-white border border-slate-200/80 text-[#0a192f] hover:bg-slate-50 hover:border-slate-300">Heavy Equipment</button>
+<button type="button" aria-pressed="false" data-filter="classic" class="filter-tab whitespace-nowrap px-4 py-2.5 rounded-lg text-xs sm:text-[13px] font-bold font-exo2 transition-colors cursor-pointer shrink-0 bg-white border border-slate-200/80 text-[#0a192f] hover:bg-slate-50 hover:border-slate-300">Classic &amp; Exotic</button>
+<a class="whitespace-nowrap px-4 py-2.5 rounded-lg text-xs sm:text-[13px] font-bold font-exo2 transition-colors bg-white border border-slate-200/80 text-[#0a192f] hover:bg-slate-50 hover:border-slate-300 shrink-0" href="/stories">View All</a>
+</div>
+<div class="story-card bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-5 mb-8 shadow-sm hover:shadow-md group" data-category="vehicle classic all">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<a class="lg:col-span-6 relative w-full h-[260px] sm:h-[340px] md:h-[380px] rounded-xl overflow-hidden block bg-slate-100" href="/stories/from-houston-to-fairfax-a-college-students-car-shipping-experience-with-car-carrier-group">
+<img alt="From Houston to Fairfax: A College Student’s Car Shipping Experience with Car Carrier Group" loading="lazy" decoding="async" data-nimg="fill" class="object-cover story-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-position:33% 20%;color:transparent" sizes="(max-width: 1024px) 100vw, 50vw"  src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fytof1nsc%2Fimage%2Fupload%2Fv1792704752%2Freal-shipment-stories%2Ftbvpb04ixaoznfiuotem.jpg&amp;w=3840&amp;q=75"/>
+</a>
+<div class="lg:col-span-6 flex flex-col justify-center lg:pr-6">
+<div class="flex items-center gap-3 mb-4">
+<span data-slot="badge" data-variant="secondary" class="group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden border border-transparent whitespace-nowrap transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;&gt;svg]:pointer-events-none [&amp;&gt;svg]:size-3! [a]:hover:bg-secondary/80 bg-slate-100 text-[#0a192f] text-[11px] font-bold font-exo2 tracking-wider px-2.5 py-1 rounded-sm uppercase">Jeep Compass</span>
+<span class="text-xs text-slate-400 font-normal">Shipment story</span>
+</div>
+<div class="flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#0a192f] mb-4">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5 text-slate-500" aria-hidden="true">
+<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+</path>
+<circle cx="12" cy="10" r="3">
+</circle>
+</svg>
+<span>Texas</span>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-3.5 h-3.5 text-slate-400" aria-hidden="true">
+<path d="M5 12h14">
+</path>
+<path d="m12 5 7 7-7 7">
+</path>
+</svg>
+<span>Virginia</span>
+</div>
+<a href="/stories/from-houston-to-fairfax-a-college-students-car-shipping-experience-with-car-carrier-group">
+<h3 class="text-2xl sm:text-3xl font-bold font-exo2 text-[#0a192f] leading-snug tracking-tight mb-4 hover:text-[#0d2861] transition-colors">From Houston to Fairfax: A College Student’s Car Shipping Experience with Car Carrier Group</h3>
+</a>
+<p class="text-sm sm:text-base text-slate-500 font-normal leading-relaxed mb-6 max-w-xl line-clamp-3">Shipping your car to college? Car Carrier Group helps students arrange reliable auto transport from Houston to Fairfax and nationwide. Get a quote today.</p>
+<a class="inline-flex items-center gap-1.5 text-sm font-bold font-exo2 text-[#0d2861] hover:text-[#091b42] transition-colors" href="/stories/from-houston-to-fairfax-a-college-students-car-shipping-experience-with-car-carrier-group">Read Full Story<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+<path d="M5 12h14">
+</path>
+<path d="m12 5 7 7-7 7">
+</path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+<div class="story-card bg-white border border-slate-200/80 rounded-2xl overflow-hidden flex flex-col shadow-sm hover:shadow-md group" data-category="freight heavy all">
+<a class="relative w-full aspect-[16/10] block overflow-hidden bg-slate-100" href="/stories/pallet-shipping-problem-solved-moving-a-wacker-neuson-vibratory-compactor">
+<img alt="Pallet Shipping Problem Solved: Moving a Wacker Neuson Vibratory Compactor" loading="lazy" decoding="async" data-nimg="fill" class="object-cover story-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-position:50% 50%;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"  src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fytof1nsc%2Fimage%2Fupload%2Fv1792090751%2Freal-shipment-stories%2Fgjw23t20knywonfvan3m.jpg&amp;w=3840&amp;q=75"/>
+</a>
+<div class="p-6 flex flex-col flex-1">
+<span class="text-[11px] font-bold font-exo2 tracking-wider text-slate-700 uppercase mb-3">Wacker Neuson Vibratory Compactor</span>
+<div class="flex items-center gap-1.5 text-xs font-semibold text-slate-600 mb-3">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5 flex-shrink-0 text-slate-400" aria-hidden="true">
+<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+</path>
+<circle cx="12" cy="10" r="3">
+</circle>
+</svg>
+<span class="truncate">Pickup: Satillo,MS → Destination: Brentwood,N.Y.</span>
+</div>
+<a href="/stories/pallet-shipping-problem-solved-moving-a-wacker-neuson-vibratory-compactor">
+<h3 class="text-lg font-bold font-exo2 text-[#0a192f] tracking-tight mb-3 line-clamp-1 hover:text-[#0d2861] transition-colors">Pallet Shipping Problem Solved: Moving a Wacker Neuson Vibratory Compactor</h3>
+</a>
+<p class="text-xs sm:text-sm text-slate-500 font-normal leading-relaxed mb-6 flex-1 line-clamp-2">Need pallet shipping? Car Carrier Group solves LTL freight challenges with reliable transport for palletized vibratory compactors. Get a quote today..</p>
+<a class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold font-exo2 text-[#0d2861] hover:text-[#091b42] transition-colors pt-2" href="/stories/pallet-shipping-problem-solved-moving-a-wacker-neuson-vibratory-compactor">Read Story<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true">
+<path d="M5 12h14">
+</path>
+<path d="m12 5 7 7-7 7">
+</path>
+</svg>
+</a>
+</div>
+</div>
+<div class="story-card bg-white border border-slate-200/80 rounded-2xl overflow-hidden flex flex-col shadow-sm hover:shadow-md group" data-category="vehicle all">
+<a class="relative w-full aspect-[16/10] block overflow-hidden bg-slate-100" href="/stories/from-california-to-massachusetts-personalized-car-shipping-service-that-makes-customers-feel-like-1">
+<img alt="Image Description:  A red SUV rests on a flatbed car trailer outdoors under a clear blue sky with mountains in the background. In the top right corner, the blue and white &quot;CAR CARRIER GROUP&quot; logo displays the text &quot;CAR CARRIER GROUP&quot; and &quot;YOUR RELIABLE SHIPPING PARTNER" loading="lazy" decoding="async" data-nimg="fill" class="object-cover story-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-position:50% 50%;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"  src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fytof1nsc%2Fimage%2Fupload%2Fv1792077452%2Freal-shipment-stories%2Fyxjde30brejvaw6vkpmh.jpg&amp;w=3840&amp;q=75"/>
+</a>
+<div class="p-6 flex flex-col flex-1">
+<span class="text-[11px] font-bold font-exo2 tracking-wider text-slate-700 uppercase mb-3">Mazda CX-5 crossover SUV</span>
+<div class="flex items-center gap-1.5 text-xs font-semibold text-slate-600 mb-3">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5 flex-shrink-0 text-slate-400" aria-hidden="true">
+<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+</path>
+<circle cx="12" cy="10" r="3">
+</circle>
+</svg>
+<span class="truncate">Pickup: California → Destination: Massachusetts</span>
+</div>
+<a href="/stories/from-california-to-massachusetts-personalized-car-shipping-service-that-makes-customers-feel-like-1">
+<h3 class="text-lg font-bold font-exo2 text-[#0a192f] tracking-tight mb-3 line-clamp-1 hover:text-[#0d2861] transition-colors">From California to Massachusetts: Personalized Car Shipping Service That Makes Customers Feel Like #1</h3>
+</a>
+<p class="text-xs sm:text-sm text-slate-500 font-normal leading-relaxed mb-6 flex-1 line-clamp-2">Discover how Car Carrier Group helped Anissa ship her son’s car from California to Massachusetts with personal service, clear communication, and pickup support.</p>
+<a class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold font-exo2 text-[#0d2861] hover:text-[#091b42] transition-colors pt-2" href="/stories/from-california-to-massachusetts-personalized-car-shipping-service-that-makes-customers-feel-like-1">Read Story<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true">
+<path d="M5 12h14">
+</path>
+<path d="m12 5 7 7-7 7">
+</path>
+</svg>
+</a>
+</div>
+</div>
+<div class="story-card bg-white border border-slate-200/80 rounded-2xl overflow-hidden flex flex-col shadow-sm hover:shadow-md group" data-category="vehicle classic all">
+<a class="relative w-full aspect-[16/10] block overflow-hidden bg-slate-100" href="/stories/from-texas-to-california-a-parents-peace-of-mind-with-car-carrier-group">
+<img alt="Image description: A silver Volvo S90 sedan loaded on a transport trailer at night. Header text reads &quot;CAR CARRIER GROUP - PREMIUM AUTO LOGISTICS. SAFE, SECURE, PROFESSIONAL.&quot; The central logo reads &quot;CAR CARRIER GROUP - YOUR RELIABLE SHIPPING PARTNER.&quot;" loading="lazy" decoding="async" data-nimg="fill" class="object-cover story-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-position:50% 50%;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"  src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fytof1nsc%2Fimage%2Fupload%2Fv1792075720%2Freal-shipment-stories%2Fods4kumkwc1vycnkrpbo.jpg&amp;w=3840&amp;q=75"/>
+</a>
+<div class="p-6 flex flex-col flex-1">
+<span class="text-[11px] font-bold font-exo2 tracking-wider text-slate-700 uppercase mb-3">Volvo S90</span>
+<div class="flex items-center gap-1.5 text-xs font-semibold text-slate-600 mb-3">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5 flex-shrink-0 text-slate-400" aria-hidden="true">
+<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+</path>
+<circle cx="12" cy="10" r="3">
+</circle>
+</svg>
+<span class="truncate">Pickup: Texas → Destination: California</span>
+</div>
+<a href="/stories/from-texas-to-california-a-parents-peace-of-mind-with-car-carrier-group">
+<h3 class="text-lg font-bold font-exo2 text-[#0a192f] tracking-tight mb-3 line-clamp-1 hover:text-[#0d2861] transition-colors">From Texas to California: A Parent’s Peace of Mind with Car Carrier Group</h3>
+</a>
+<p class="text-xs sm:text-sm text-slate-500 font-normal leading-relaxed mb-6 flex-1 line-clamp-2">Discover Paul Wood’s experience shipping his daughter’s car from Texas to California with Car Carrier Group’s reliable service and professional drivers.</p>
+<a class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold font-exo2 text-[#0d2861] hover:text-[#091b42] transition-colors pt-2" href="/stories/from-texas-to-california-a-parents-peace-of-mind-with-car-carrier-group">Read Story<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true">
+<path d="M5 12h14">
+</path>
+<path d="m12 5 7 7-7 7">
+</path>
+</svg>
+</a>
+</div>
+</div>
+<div class="story-card bg-white border border-slate-200/80 rounded-2xl overflow-hidden flex flex-col shadow-sm hover:shadow-md group" data-category="freight all">
+<a class="relative w-full aspect-[16/10] block overflow-hidden bg-slate-100" href="/stories/transport-tool-boxes-on-pallets">
+<img alt="LTL car Shipping by car carrier group" loading="lazy" decoding="async" data-nimg="fill" class="object-cover story-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-position:50% 50%;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"  src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fytof1nsc%2Fimage%2Fupload%2Fv1791913969%2Freal-shipment-stories%2Fcozjifd8wynzx3dqbp2r.jpg&amp;w=3840&amp;q=75"/>
+</a>
+<div class="p-6 flex flex-col flex-1">
+<span class="text-[11px] font-bold font-exo2 tracking-wider text-slate-700 uppercase mb-3">LTL</span>
+<div class="flex items-center gap-1.5 text-xs font-semibold text-slate-600 mb-3">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5 flex-shrink-0 text-slate-400" aria-hidden="true">
+<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+</path>
+<circle cx="12" cy="10" r="3">
+</circle>
+</svg>
+<span class="truncate">Pickup: Red rock,AZ → Destination: South River,N.J.</span>
+</div>
+<a href="/stories/transport-tool-boxes-on-pallets">
+<h3 class="text-lg font-bold font-exo2 text-[#0a192f] tracking-tight mb-3 line-clamp-1 hover:text-[#0d2861] transition-colors">LTL Shipment</h3>
+</a>
+<p class="text-xs sm:text-sm text-slate-500 font-normal leading-relaxed mb-6 flex-1 line-clamp-2">LTL Shipment.  Pallet transport Tool Box Shipping</p>
+<a class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold font-exo2 text-[#0d2861] hover:text-[#091b42] transition-colors pt-2" href="/stories/transport-tool-boxes-on-pallets">Read Story<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true">
+<path d="M5 12h14">
+</path>
+<path d="m12 5 7 7-7 7">
+</path>
+</svg>
+</a>
+</div>
+</div>
+<div class="story-card bg-white border border-slate-200/80 rounded-2xl overflow-hidden flex flex-col shadow-sm hover:shadow-md group" data-category="heavy vehicle classic all">
+<a class="relative w-full aspect-[16/10] block overflow-hidden bg-slate-100" href="/stories/ship-humvee-limo">
+<img alt="Humvee Limo on trailer" loading="lazy" decoding="async" data-nimg="fill" class="object-cover story-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-position:50% 50%;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"  src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fytof1nsc%2Fimage%2Fupload%2Fv1791475703%2Freal-shipment-stories%2Fzfbgwmtwlln7gfbn4oby.jpg&amp;w=3840&amp;q=75"/>
+</a>
+<div class="p-6 flex flex-col flex-1">
+<span class="text-[11px] font-bold font-exo2 tracking-wider text-slate-700 uppercase mb-3">Heavy equipment</span>
+<div class="flex items-center gap-1.5 text-xs font-semibold text-slate-600 mb-3">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5 flex-shrink-0 text-slate-400" aria-hidden="true">
+<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+</path>
+<circle cx="12" cy="10" r="3">
+</circle>
+</svg>
+<span class="truncate">Pickup: Washington → Destination: Texas</span>
+</div>
+<a href="/stories/ship-humvee-limo">
+<h3 class="text-lg font-bold font-exo2 text-[#0a192f] tracking-tight mb-3 line-clamp-1 hover:text-[#0d2861] transition-colors">Ship Humvee Limo</h3>
+</a>
+<p class="text-xs sm:text-sm text-slate-500 font-normal leading-relaxed mb-6 flex-1 line-clamp-2">Need to ship a Hummer limo or heavy vehicle? Car Carrier Group handled the nationwide transport of a 39-ft, 14-passenger Humvee limo, providing reliable freight, vehicle, and heavy equipment shipping from pickup to delivery.</p>
+<a class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold font-exo2 text-[#0d2861] hover:text-[#091b42] transition-colors pt-2" href="/stories/ship-humvee-limo">Read Story<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true">
+<path d="M5 12h14">
+</path>
+<path d="m12 5 7 7-7 7">
+</path>
+</svg>
+</a>
+</div>
+</div>
+<div class="story-card bg-white border border-slate-200/80 rounded-2xl overflow-hidden flex flex-col shadow-sm hover:shadow-md group" data-category="heavy vehicle freight all">
+<a class="relative w-full aspect-[16/10] block overflow-hidden bg-slate-100" href="/stories/vehicle-shipping-general-freight-shipping-heavy-equipment-shipping">
+<img alt="2000 Am General M9998" loading="lazy" decoding="async" data-nimg="fill" class="object-cover story-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-position:50% 50%;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"  src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fytof1nsc%2Fimage%2Fupload%2Fv1790868809%2Freal-shipment-stories%2Fdldczkrdur3ost4crpxk.jpg&amp;w=3840&amp;q=75"/>
+</a>
+<div class="p-6 flex flex-col flex-1">
+<span class="text-[11px] font-bold font-exo2 tracking-wider text-slate-700 uppercase mb-3">Vehicle Transport</span>
+<div class="flex items-center gap-1.5 text-xs font-semibold text-slate-600 mb-3">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5 flex-shrink-0 text-slate-400" aria-hidden="true">
+<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+</path>
+<circle cx="12" cy="10" r="3">
+</circle>
+</svg>
+<span class="truncate">Pickup: Aladdin, → Destination: Dayton</span>
+</div>
+<a href="/stories/vehicle-shipping-general-freight-shipping-heavy-equipment-shipping">
+<h3 class="text-lg font-bold font-exo2 text-[#0a192f] tracking-tight mb-3 line-clamp-1 hover:text-[#0d2861] transition-colors">Vehicle Shipping, General Freight Shipping, Heavy Equipment Shipping</h3>
+</a>
+<p class="text-xs sm:text-sm text-slate-500 font-normal leading-relaxed mb-6 flex-1 line-clamp-2">We transported this Humvee to Aladdin,WY from Florida 6 months ago and now they are moving their warehouse to Dayton,NV.   Happy to help our clients when needed.  Car Carrier Group loves coming through for our clients.</p>
+<a class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold font-exo2 text-[#0d2861] hover:text-[#091b42] transition-colors pt-2" href="/stories/vehicle-shipping-general-freight-shipping-heavy-equipment-shipping">Read Story<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true">
+<path d="M5 12h14">
+</path>
+<path d="m12 5 7 7-7 7">
+</path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-        <!-- Filter Categories Bar -->
-        <div class="flex items-center gap-2 sm:gap-2.5 overflow-x-auto pb-2 scrollbar-none mb-10" id="story-filter-tabs" role="tablist" aria-label="Filter stories by category">
-          <button type="button" role="tab" data-filter="all" aria-selected="true" class="filter-tab whitespace-nowrap px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg text-xs sm:text-[13px] font-bold font-exo2 transition-all duration-200 cursor-pointer shrink-0 bg-[#0d2861] text-white shadow-sm border border-[#0d2861]">
-            All Stories
-          </button>
-          <button type="button" role="tab" data-filter="vehicle" aria-selected="false" class="filter-tab whitespace-nowrap px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg text-xs sm:text-[13px] font-bold font-exo2 transition-all duration-200 cursor-pointer shrink-0 bg-white border border-slate-200/90 text-[#0a192f] hover:bg-slate-50 hover:border-slate-300 hover:text-[#0d2861]">
-            Vehicle Shipping
-          </button>
-          <button type="button" role="tab" data-filter="freight" aria-selected="false" class="filter-tab whitespace-nowrap px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg text-xs sm:text-[13px] font-bold font-exo2 transition-all duration-200 cursor-pointer shrink-0 bg-white border border-slate-200/90 text-[#0a192f] hover:bg-slate-50 hover:border-slate-300 hover:text-[#0d2861]">
-            Freight
-          </button>
-          <button type="button" role="tab" data-filter="heavy" aria-selected="false" class="filter-tab whitespace-nowrap px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg text-xs sm:text-[13px] font-bold font-exo2 transition-all duration-200 cursor-pointer shrink-0 bg-white border border-slate-200/90 text-[#0a192f] hover:bg-slate-50 hover:border-slate-300 hover:text-[#0d2861]">
-            Heavy Equipment
-          </button>
-          <button type="button" role="tab" data-filter="classic" aria-selected="false" class="filter-tab whitespace-nowrap px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg text-xs sm:text-[13px] font-bold font-exo2 transition-all duration-200 cursor-pointer shrink-0 bg-white border border-slate-200/90 text-[#0a192f] hover:bg-slate-50 hover:border-slate-300 hover:text-[#0d2861]">
-            Classic &amp; Exotic
-          </button>
-          <button type="button" role="tab" data-filter="all" aria-selected="false" class="filter-tab whitespace-nowrap px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg text-xs sm:text-[13px] font-bold font-exo2 transition-all duration-200 cursor-pointer shrink-0 bg-white border border-slate-200/90 text-[#0a192f] hover:bg-slate-50 hover:border-slate-300 hover:text-[#0d2861] inline-flex items-center gap-1.5" title="View all available shipment stories">
-            <span>View All</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </button>
-        </div>
-
-        <!-- Featured Story Spotlight Card -->
-        <article class="story-card bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-6 mb-10 shadow-sm hover:shadow-md transition-all duration-300 group" data-category="vehicle classic all">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <a class="lg:col-span-6 relative w-full h-[260px] sm:h-[340px] md:h-[380px] rounded-xl overflow-hidden block bg-slate-100 shadow-inner" href="#stories">
-              <img 
-                src="./public/stories/college-student-jeep-compass-houston-to-fairfax.jpg" 
-                alt="From Houston to Fairfax: A College Student’s Car Shipping Experience with Car Carrier Group"
-                loading="lazy" 
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                style="object-position: 33% 20%;"
-              />
-              <span class="absolute top-3 left-3 bg-[#0d2861]/90 backdrop-blur-xs text-white text-[11px] font-bold tracking-wider px-3 py-1 rounded-md uppercase font-exo2 shadow-sm">
-                Featured Story
-              </span>
-            </a>
-            
-            <div class="lg:col-span-6 flex flex-col justify-center lg:pr-6">
-              <div class="flex items-center gap-3 mb-3">
-                <span class="inline-flex items-center bg-slate-100 text-[#0a192f] text-[11px] font-bold tracking-wider px-2.5 py-1 rounded-sm uppercase font-exo2">
-                  Jeep Compass
-                </span>
-                <span class="text-xs text-slate-400 font-normal">
-                  Shipment story
-                </span>
-              </div>
-
-              <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold text-[#0a192f] mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-500">
-                  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
-                  <circle cx="12" cy="10" r="3"></circle>
-                </svg>
-                <span>Texas</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-400">
-                  <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
-                </svg>
-                <span>Virginia</span>
-              </div>
-
-              <h3 class="text-2xl sm:text-3xl font-bold text-[#0a192f] leading-snug tracking-tight mb-4 group-hover:text-[#0d2861] transition-colors font-exo2">
-                From Houston to Fairfax: A College Student’s Car Shipping Experience with Car Carrier Group
-              </h3>
-
-              <p class="text-sm sm:text-base text-slate-500 font-normal leading-relaxed mb-6 max-w-xl line-clamp-3">
-                Shipping your car to college? Car Carrier Group helps students arrange reliable auto transport from Houston to Fairfax and nationwide. Get a quote today.
-              </p>
-
-              <div>
-                <a class="inline-flex items-center gap-2 text-sm font-bold text-[#0d2861] hover:text-[#ea580c] transition-colors font-exo2 group/btn" href="https://stories.carcarriergroup.com/stories/from-houston-to-fairfax-a-college-students-car-shipping-experience-with-car-carrier-group" target="_blank" rel="noopener noreferrer">
-                  <span>Read Full Story</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover/btn:translate-x-1">
-                    <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- Stories 3-Column Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="stories-grid">
-          
-          <!-- Card 1: Wacker Neuson Vibratory Compactor -->
-          <article class="story-card bg-white border border-slate-200/80 rounded-2xl overflow-hidden flex flex-col shadow-sm hover:shadow-lg transition-all duration-300 group" data-category="freight heavy all">
-            <a class="relative w-full aspect-[16/10] block overflow-hidden bg-slate-100" href="#stories">
-              <img 
-                src="./public/stories/pallet-shipping-wacker-neuson-vibratory-compactor.jpg" 
-                alt="Pallet Shipping Problem Solved: Moving a Wacker Neuson Vibratory Compactor"
-                loading="lazy" 
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-xs text-[#0a192f] text-[10px] font-bold tracking-wider px-2.5 py-1 rounded-sm uppercase font-exo2 shadow-xs">
-                Freight
-              </span>
-            </a>
-            <div class="p-6 flex flex-col flex-1">
-              <span class="text-[11px] font-bold tracking-wider text-slate-700 uppercase mb-2 font-exo2">
-                Wacker Neuson Vibratory Compactor
-              </span>
-              <div class="flex items-center gap-1.5 text-xs font-semibold text-slate-600 mb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-slate-400">
-                  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle>
-                </svg>
-                <span class="truncate">Pickup: Satillo,MS → Destination: Brentwood,N.Y.</span>
-              </div>
-              <h3 class="text-lg font-bold text-[#0a192f] tracking-tight mb-3 line-clamp-1 group-hover:text-[#0d2861] transition-colors font-exo2">
-                Pallet Shipping Problem Solved: Moving a Wacker Neuson Vibratory Compactor
-              </h3>
-              <p class="text-xs sm:text-sm text-slate-500 font-normal leading-relaxed mb-6 flex-1 line-clamp-2">
-                Need pallet shipping? Car Carrier Group solves LTL freight challenges with reliable transport for palletized vibratory compactors. Get a quote today..
-              </p>
-              <a class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0d2861] group-hover:text-[#ea580c] transition-colors pt-2 font-exo2 group/btn" href="https://stories.carcarriergroup.com/stories/pallet-shipping-problem-solved-moving-a-wacker-neuson-vibratory-compactor" target="_blank" rel="noopener noreferrer">
-                <span>Read Story</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover/btn:translate-x-1">
-                  <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </article>
-
-          <!-- Card 2: Mazda CX-5 crossover SUV -->
-          <article class="story-card bg-white border border-slate-200/80 rounded-2xl overflow-hidden flex flex-col shadow-sm hover:shadow-lg transition-all duration-300 group" data-category="vehicle all">
-            <a class="relative w-full aspect-[16/10] block overflow-hidden bg-slate-100" href="#stories">
-              <img 
-                src="./public/stories/mazda-cx5-california-to-massachusetts.jpg" 
-                alt="From California to Massachusetts: Personalized Car Shipping Service That Makes Customers Feel Like #1"
-                loading="lazy" 
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-xs text-[#0a192f] text-[10px] font-bold tracking-wider px-2.5 py-1 rounded-sm uppercase font-exo2 shadow-xs">
-                Vehicle Shipping
-              </span>
-            </a>
-            <div class="p-6 flex flex-col flex-1">
-              <span class="text-[11px] font-bold tracking-wider text-slate-700 uppercase mb-2 font-exo2">
-                Mazda CX-5 crossover SUV
-              </span>
-              <div class="flex items-center gap-1.5 text-xs font-semibold text-slate-600 mb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-slate-400">
-                  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle>
-                </svg>
-                <span class="truncate">Pickup: California → Destination: Massachusetts</span>
-              </div>
-              <h3 class="text-lg font-bold text-[#0a192f] tracking-tight mb-3 line-clamp-1 group-hover:text-[#0d2861] transition-colors font-exo2">
-                From California to Massachusetts: Personalized Car Shipping Service That Makes Customers Feel Like #1
-              </h3>
-              <p class="text-xs sm:text-sm text-slate-500 font-normal leading-relaxed mb-6 flex-1 line-clamp-2">
-                Discover how Car Carrier Group helped Anissa ship her son’s car from California to Massachusetts with personal service, clear communication, and pickup support.
-              </p>
-              <a class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0d2861] group-hover:text-[#ea580c] transition-colors pt-2 font-exo2 group/btn" href="https://stories.carcarriergroup.com/stories/from-california-to-massachusetts-personalized-car-shipping-service-that-makes-customers-feel-like-1" target="_blank" rel="noopener noreferrer">
-                <span>Read Story</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover/btn:translate-x-1">
-                  <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </article>
-
-          <!-- Card 3: Volvo S90 -->
-          <article class="story-card bg-white border border-slate-200/80 rounded-2xl overflow-hidden flex flex-col shadow-sm hover:shadow-lg transition-all duration-300 group" data-category="vehicle classic all">
-            <a class="relative w-full aspect-[16/10] block overflow-hidden bg-slate-100" href="#stories">
-              <img 
-                src="./public/stories/volvo-s90-texas-to-california.jpg" 
-                alt="From Texas to California: A Parent’s Peace of Mind with Car Carrier Group"
-                loading="lazy" 
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-xs text-[#0a192f] text-[10px] font-bold tracking-wider px-2.5 py-1 rounded-sm uppercase font-exo2 shadow-xs">
-                Vehicle Shipping
-              </span>
-            </a>
-            <div class="p-6 flex flex-col flex-1">
-              <span class="text-[11px] font-bold tracking-wider text-slate-700 uppercase mb-2 font-exo2">
-                Volvo S90
-              </span>
-              <div class="flex items-center gap-1.5 text-xs font-semibold text-slate-600 mb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-slate-400">
-                  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle>
-                </svg>
-                <span class="truncate">Pickup: Texas → Destination: California</span>
-              </div>
-              <h3 class="text-lg font-bold text-[#0a192f] tracking-tight mb-3 line-clamp-1 group-hover:text-[#0d2861] transition-colors font-exo2">
-                From Texas to California: A Parent’s Peace of Mind with Car Carrier Group
-              </h3>
-              <p class="text-xs sm:text-sm text-slate-500 font-normal leading-relaxed mb-6 flex-1 line-clamp-2">
-                Discover Paul Wood’s experience shipping his daughter’s car from Texas to California with Car Carrier Group’s reliable service and professional drivers.
-              </p>
-              <a class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0d2861] group-hover:text-[#ea580c] transition-colors pt-2 font-exo2 group/btn" href="https://stories.carcarriergroup.com/stories/from-texas-to-california-a-parents-peace-of-mind-with-car-carrier-group" target="_blank" rel="noopener noreferrer">
-                <span>Read Story</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover/btn:translate-x-1">
-                  <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </article>
-
-          <!-- Card 4: LTL Shipment -->
-          <article class="story-card bg-white border border-slate-200/80 rounded-2xl overflow-hidden flex flex-col shadow-sm hover:shadow-lg transition-all duration-300 group" data-category="freight all">
-            <a class="relative w-full aspect-[16/10] block overflow-hidden bg-slate-100" href="#stories">
-              <img 
-                src="./public/stories/ltl-pallet-transport-tool-boxes.jpg" 
-                alt="LTL car Shipping by car carrier group"
-                loading="lazy" 
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-xs text-[#0a192f] text-[10px] font-bold tracking-wider px-2.5 py-1 rounded-sm uppercase font-exo2 shadow-xs">
-                Freight
-              </span>
-            </a>
-            <div class="p-6 flex flex-col flex-1">
-              <span class="text-[11px] font-bold tracking-wider text-slate-700 uppercase mb-2 font-exo2">
-                LTL
-              </span>
-              <div class="flex items-center gap-1.5 text-xs font-semibold text-slate-600 mb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-slate-400">
-                  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle>
-                </svg>
-                <span class="truncate">Pickup: Red rock,AZ → Destination: South River,N.J.</span>
-              </div>
-              <h3 class="text-lg font-bold text-[#0a192f] tracking-tight mb-3 line-clamp-1 group-hover:text-[#0d2861] transition-colors font-exo2">
-                LTL Shipment
-              </h3>
-              <p class="text-xs sm:text-sm text-slate-500 font-normal leading-relaxed mb-6 flex-1 line-clamp-2">
-                LTL Shipment. Pallet transport Tool Box Shipping across state lines with secured pallet packing.
-              </p>
-              <a class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0d2861] group-hover:text-[#ea580c] transition-colors pt-2 font-exo2 group/btn" href="https://stories.carcarriergroup.com/stories/transport-tool-boxes-on-pallets" target="_blank" rel="noopener noreferrer">
-                <span>Read Story</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover/btn:translate-x-1">
-                  <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </article>
-
-          <!-- Card 5: Ship Humvee Limo -->
-          <article class="story-card bg-white border border-slate-200/80 rounded-2xl overflow-hidden flex flex-col shadow-sm hover:shadow-lg transition-all duration-300 group" data-category="heavy vehicle classic all">
-            <a class="relative w-full aspect-[16/10] block overflow-hidden bg-slate-100" href="#stories">
-              <img 
-                src="./public/stories/humvee-limo-heavy-transport-washington-to-texas.jpg" 
-                alt="Humvee Limo on trailer"
-                loading="lazy" 
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-xs text-[#0a192f] text-[10px] font-bold tracking-wider px-2.5 py-1 rounded-sm uppercase font-exo2 shadow-xs">
-                Heavy Equipment
-              </span>
-            </a>
-            <div class="p-6 flex flex-col flex-1">
-              <span class="text-[11px] font-bold tracking-wider text-slate-700 uppercase mb-2 font-exo2">
-                Heavy Equipment
-              </span>
-              <div class="flex items-center gap-1.5 text-xs font-semibold text-slate-600 mb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-slate-400">
-                  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle>
-                </svg>
-                <span class="truncate">Pickup: Washington → Destination: Texas</span>
-              </div>
-              <h3 class="text-lg font-bold text-[#0a192f] tracking-tight mb-3 line-clamp-1 group-hover:text-[#0d2861] transition-colors font-exo2">
-                Ship Humvee Limo
-              </h3>
-              <p class="text-xs sm:text-sm text-slate-500 font-normal leading-relaxed mb-6 flex-1 line-clamp-2">
-                Need to ship a Hummer limo or heavy vehicle? Car Carrier Group handled nationwide transport of a 39-ft, 14-passenger Humvee limo.
-              </p>
-              <a class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0d2861] group-hover:text-[#ea580c] transition-colors pt-2 font-exo2 group/btn" href="https://stories.carcarriergroup.com/stories/ship-humvee-limo" target="_blank" rel="noopener noreferrer">
-                <span>Read Story</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover/btn:translate-x-1">
-                  <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </article>
-
-          <!-- Card 6: AM General Humvee Warehouse Move -->
-          <article class="story-card bg-white border border-slate-200/80 rounded-2xl overflow-hidden flex flex-col shadow-sm hover:shadow-lg transition-all duration-300 group" data-category="heavy vehicle freight all">
-            <a class="relative w-full aspect-[16/10] block overflow-hidden bg-slate-100" href="#stories">
-              <img 
-                src="./public/stories/am-general-humvee-m9998-warehouse-move.jpg" 
-                alt="2000 Am General M9998"
-                loading="lazy" 
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-xs text-[#0a192f] text-[10px] font-bold tracking-wider px-2.5 py-1 rounded-sm uppercase font-exo2 shadow-xs">
-                Vehicle Transport
-              </span>
-            </a>
-            <div class="p-6 flex flex-col flex-1">
-              <span class="text-[11px] font-bold tracking-wider text-slate-700 uppercase mb-2 font-exo2">
-                Vehicle Transport
-              </span>
-              <div class="flex items-center gap-1.5 text-xs font-semibold text-slate-600 mb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-slate-400">
-                  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle>
-                </svg>
-                <span class="truncate">Pickup: Aladdin, → Destination: Dayton</span>
-              </div>
-              <h3 class="text-lg font-bold text-[#0a192f] tracking-tight mb-3 line-clamp-1 group-hover:text-[#0d2861] transition-colors font-exo2">
-                Vehicle Shipping, General Freight Shipping, Heavy Equipment Shipping
-              </h3>
-              <p class="text-xs sm:text-sm text-slate-500 font-normal leading-relaxed mb-6 flex-1 line-clamp-2">
-                We transported this Humvee to Aladdin,WY from Florida 6 months ago and now warehouse move to Dayton,NV. Car Carrier Group comes through for our clients.
-              </p>
-              <a class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0d2861] group-hover:text-[#ea580c] transition-colors pt-2 font-exo2 group/btn" href="https://stories.carcarriergroup.com/stories/vehicle-shipping-general-freight-shipping-heavy-equipment-shipping" target="_blank" rel="noopener noreferrer">
-                <span>Read Story</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover/btn:translate-x-1">
-                  <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </article>
-
-        </div>
-
-        <!-- Empty State Notice if no cards match filter -->
-        <div id="no-stories-notice" class="hidden text-center py-12 px-4 bg-slate-50 rounded-2xl border border-slate-200/80 my-8">
-          <p class="text-base font-bold text-[#0a192f] mb-1 font-exo2">No stories found in this category</p>
-          <p class="text-sm text-slate-500 mb-4">Try selecting another transportation category or view all real shipment stories.</p>
-          <button type="button" id="reset-filter-btn" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#0d2861] text-white text-xs sm:text-sm font-bold font-exo2 shadow-sm hover:bg-[#081a40] transition-colors cursor-pointer">
-            Show All Stories
-          </button>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================================= -->
     <!-- SECTION: WHY THESE STORIES MATTER                                         -->
     <!-- ========================================================================= -->
     <section class="w-full bg-[#f8fafc] py-16 sm:py-20 lg:py-24 border-t border-slate-200/70">
@@ -1182,14 +1064,14 @@
       function filterCategory(filterVal, clickedTab) {
         // Reset all tabs to inactive style
         filterTabs.forEach((tab) => {
-          tab.setAttribute('aria-selected', 'false');
-          tab.className = 'filter-tab whitespace-nowrap px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg text-xs sm:text-[13px] font-bold font-exo2 transition-all duration-200 cursor-pointer shrink-0 bg-white border border-slate-200/90 text-[#0a192f] hover:bg-slate-50 hover:border-slate-300 hover:text-[#0d2861]';
+          tab.setAttribute('aria-pressed', 'false');
+          tab.className = 'filter-tab whitespace-nowrap px-4 py-2.5 rounded-lg text-xs sm:text-[13px] font-bold transition-colors cursor-pointer shrink-0 bg-white border border-slate-200/80 text-[#0a192f] hover:bg-slate-50 hover:border-slate-300 font-exo2';
         });
 
         // Set active tab style
         if (clickedTab) {
-          clickedTab.setAttribute('aria-selected', 'true');
-          clickedTab.className = 'filter-tab whitespace-nowrap px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg text-xs sm:text-[13px] font-bold font-exo2 transition-all duration-200 cursor-pointer shrink-0 bg-[#0d2861] text-white shadow-sm border border-[#0d2861]';
+          clickedTab.setAttribute('aria-pressed', 'true');
+          clickedTab.className = 'filter-tab whitespace-nowrap px-4 py-2.5 rounded-lg text-xs sm:text-[13px] font-bold transition-colors cursor-pointer shrink-0 bg-[#0d2861] text-white shadow-sm font-exo2';
         }
 
         let visibleCount = 0;
