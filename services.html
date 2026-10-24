@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full antialiased">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How We Can Help You | Transportation Services | Car Carrier Group Stories</title>
+  <meta name="description" content="Explore the information to gather before requesting vehicle, freight, or heavy-equipment transportation with Car Carrier Group." />
+  <link rel="icon" href="./public/branding/favicon.ico" type="image/x-icon" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Local Exo 2 Font & Global Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Tailwind Custom Config -->
+  <script src="js/tailwind.config.js"></script>
+</head>
+<body class="min-h-full flex flex-col bg-[#f8fafc] text-[#0a192f] antialiased">
+
+  <!-- ========================================================================= -->
+  <!-- CAR CARRIER GROUP NAVBAR                                                  -->
+  <!-- ========================================================================= -->
+  <header class="sticky top-0 z-40 w-full bg-white border-b border-gray-100 shadow-[0_1px_3px_rgba(0,0,0,0.05)] transition-all duration-200">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-3.5 sm:py-4">
+      
+      <!-- Brand Logo -->
+      <a class="flex items-center group transition-transform duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d2861]" href="./index.html" aria-label="Car Carrier Group Home">
+        <img 
+          src="./public/branding/car-carrier-group-logo.png" 
+          alt="Car Carrier Group" 
+          class="h-14 sm:h-16 w-auto object-contain transition-opacity duration-200 group-hover:opacity-95"
+          width="160"
+          height="64"
+        />
+      </a>
+
+      <!-- Navigation & Action Buttons -->
+      <div class="flex items-center gap-3 lg:gap-10">
+        <!-- Desktop Navigation Links -->
+        <nav aria-label="Primary navigation" class="hidden md:flex items-center gap-7 lg:gap-8 font-exo2">
+          <a class="text-[15px] font-bold text-[#1f2d3d] hover:text-[#0d2861] transition-colors duration-150 py-1" href="./index.html#stories">
+            Shipment Stories
+          </a>
+          <a class="text-[15px] font-bold text-[#0d2861] border-b-2 border-[#0d2861] transition-colors duration-150 py-1" href="./services.html">
+            Transportation Services
+          </a>
+          <a class="text-[15px] font-bold text-[#1f2d3d] hover:text-[#0d2861] transition-colors duration-150 py-1" href="./index.html#resources">
+            Resources
+          </a>
+        </nav>
+
+        <!-- Primary CTA Button (Desktop & Tablet) -->
+        <a 
+          href="https://www.carcarriergroup.com/car-shipping-quote?utm_source=ccg-stories&utm_medium=referral&utm_campaign=header" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="hidden sm:inline-flex items-center justify-center rounded-lg bg-[#0d2861] px-5 py-3 text-[15px] font-semibold tracking-wide text-white shadow-sm transition-all duration-200 hover:bg-[#091b42] hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d2861] active:scale-[0.98] font-exo2"
+        >
+          Request a Quote
+        </a>
+
+        <!-- Mobile Menu Toggle Button (Hamburger / Close) -->
+        <button 
+          type="button" 
+          id="mobile-menu-btn" 
+          class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg text-[#0d2861] hover:bg-slate-100 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d2861] md:hidden cursor-pointer" 
+          aria-expanded="false" 
+          aria-controls="mobile-menu" 
+          aria-label="Open navigation menu"
+        >
+          <svg id="menu-icon-hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 block">
+            <path d="M4 5h16"></path>
+            <path d="M4 12h16"></path>
+            <path d="M4 19h16"></path>
+          </svg>
+          <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 hidden">
+            <path d="M18 6 6 18"></path>
+            <path d="m6 6 12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-100 bg-white shadow-lg transition-all duration-200">
+      <nav aria-label="Mobile navigation" class="container mx-auto flex flex-col px-4 py-4 sm:px-6 space-y-1 font-exo2">
+        <a class="mobile-nav-link rounded-lg px-3.5 py-3 text-[15px] font-bold text-[#1f2d3d] hover:bg-slate-50 hover:text-[#0d2861] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d2861]" href="./index.html#stories">
+          Shipment Stories
+        </a>
+        <a class="mobile-nav-link rounded-lg px-3.5 py-3 text-[15px] font-bold text-[#0d2861] bg-slate-50 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d2861]" href="./services.html">
+          Transportation Services
+        </a>
+        <a class="mobile-nav-link rounded-lg px-3.5 py-3 text-[15px] font-bold text-[#1f2d3d] hover:bg-slate-50 hover:text-[#0d2861] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d2861]" href="./index.html#resources">
+          Resources
+        </a>
+        <div class="pt-2">
+          <a 
+            class="block w-full rounded-lg bg-[#0d2861] px-4 py-3.5 text-center text-[15px] font-semibold text-white shadow-sm hover:bg-[#091b42] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d2861] active:scale-[0.99]" 
+            href="https://www.carcarriergroup.com/car-shipping-quote?utm_source=ccg-stories&utm_medium=referral&utm_campaign=mobile-header"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Request a quote from Car Carrier Group
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- MAIN SERVICES CONTENT                                                     -->
+  <!-- ========================================================================= -->
+  <main class="flex-1">
+    
+    <!-- Hero Header Section -->
+    <section class="w-full bg-white py-16 sm:py-24 lg:py-28 border-b border-slate-200/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center flex flex-col items-center">
+          <span class="text-[11px] sm:text-xs font-bold tracking-[0.22em] text-[#0d2861] uppercase mb-4 sm:mb-6 block font-exo2">
+            Our Services
+          </span>
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.12] mb-6 font-exo2">
+            <span class="text-[#0a192f]">How </span>
+            <span class="text-[#0d2861]">we</span>
+            <span class="text-[#0a192f]"> can </span>
+            <br class="hidden sm:inline"/>
+            <span class="text-[#0d2861]">help</span>
+            <span class="text-[#0a192f]"> you.</span>
+          </h1>
+          <p class="text-base md:text-[17px] text-slate-500 font-normal leading-relaxed max-w-2xl font-exo2">
+            Explore the information to gather before requesting vehicle, freight, or heavy-equipment transportation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Cards Grid Section -->
+    <section class="w-full bg-[#f8fafc] py-16 sm:py-20 lg:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          
+          <!-- Service Card 1: Vehicle Shipping -->
+          <div class="bg-white p-8 sm:p-9 rounded-3xl border border-slate-200/80 shadow-xs hover:shadow-lg hover:border-slate-300 transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="h-12 w-12 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-[#0d2861] mb-6 group-hover:scale-105 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-car">
+                  <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path>
+                  <circle cx="7" cy="17" r="2"></circle>
+                  <path d="M9 17h6"></path>
+                  <circle cx="17" cy="17" r="2"></circle>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3 tracking-tight font-exo2 group-hover:text-[#0d2861] transition-colors">
+                Vehicle shipping
+              </h3>
+              <p class="text-sm text-slate-500 leading-relaxed font-normal mb-6">
+                Plan a vehicle move with clear pickup, delivery, and condition details.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-600 mb-8 border-t border-slate-100 pt-4">
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#d67d3e]"></span>
+                  Cars, SUVs, Trucks, Vans
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#d67d3e]"></span>
+                  Classic, Antique & Exotic Autos
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#d67d3e]"></span>
+                  Open & Enclosed Carriers
+                </li>
+              </ul>
+            </div>
+            <a class="inline-flex items-center gap-2 text-sm font-bold text-[#0d2861] hover:text-[#091b42] transition-colors font-exo2" href="./services/vehicle-shipping.html">
+              Learn more
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right transition-transform group-hover:translate-x-1">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Service Card 2: Freight -->
+          <div class="bg-white p-8 sm:p-9 rounded-3xl border border-slate-200/80 shadow-xs hover:shadow-lg hover:border-slate-300 transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="h-12 w-12 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-[#0d2861] mb-6 group-hover:scale-105 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package">
+                  <path d="m7.5 4.27 9 5.15"></path>
+                  <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
+                  <path d="m3.3 7 8.7 5 8.7-5"></path>
+                  <path d="M12 22V12"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3 tracking-tight font-exo2 group-hover:text-[#0d2861] transition-colors">
+                Freight
+              </h3>
+              <p class="text-sm text-slate-500 leading-relaxed font-normal mb-6">
+                Coordinate freight around the shipment, facilities, and delivery requirements.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-600 mb-8 border-t border-slate-100 pt-4">
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#d67d3e]"></span>
+                  LTL & Full Truckload (FTL)
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#d67d3e]"></span>
+                  Pallet Transport & Tool Boxes
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#d67d3e]"></span>
+                  Dry Van & Flatbed Logistical Support
+                </li>
+              </ul>
+            </div>
+            <a class="inline-flex items-center gap-2 text-sm font-bold text-[#0d2861] hover:text-[#091b42] transition-colors font-exo2" href="./services/freight.html">
+              Learn more
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right transition-transform group-hover:translate-x-1">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Service Card 3: Heavy Equipment -->
+          <div class="bg-white p-8 sm:p-9 rounded-3xl border border-slate-200/80 shadow-xs hover:shadow-lg hover:border-slate-300 transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="h-12 w-12 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-[#0d2861] mb-6 group-hover:scale-105 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-truck">
+                  <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path>
+                  <path d="M15 18H9"></path>
+                  <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path>
+                  <circle cx="17" cy="18" r="2"></circle>
+                  <circle cx="7" cy="18" r="2"></circle>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3 tracking-tight font-exo2 group-hover:text-[#0d2861] transition-colors">
+                Heavy equipment
+              </h3>
+              <p class="text-sm text-slate-500 leading-relaxed font-normal mb-6">
+                Prepare the equipment and site details needed to plan a safe move.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-600 mb-8 border-t border-slate-100 pt-4">
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#d67d3e]"></span>
+                  Tractors, Excavators, Compactors
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#d67d3e]"></span>
+                  Oversized Military & Humvee Limos
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#d67d3e]"></span>
+                  Heavy Ramps & Specialized Securing
+                </li>
+              </ul>
+            </div>
+            <a class="inline-flex items-center gap-2 text-sm font-bold text-[#0d2861] hover:text-[#091b42] transition-colors font-exo2" href="./services/heavy-equipment.html">
+              Learn more
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right transition-transform group-hover:translate-x-1">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SECTION: ONE QUICK CALL DOES IT ALL! (DIRECT CARRIER DISPATCH CTA)        -->
+    <!-- ========================================================================= -->
+    <section class="relative w-full overflow-hidden bg-[#0d2861] py-14 sm:py-16 lg:py-20 text-white border-y border-blue-900/60">
+      <div aria-hidden="true" class="pointer-events-none absolute -top-32 -right-32 h-96 w-96 rounded-full bg-blue-500/15 blur-3xl"></div>
+      <div aria-hidden="true" class="pointer-events-none absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-indigo-500/15 blur-3xl"></div>
+      
+      <div class="container relative mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="rounded-3xl bg-white/[0.04] border border-white/10 p-6 sm:p-10 lg:p-14 backdrop-blur-sm shadow-2xl">
+          
+          <div class="flex items-center justify-center gap-2 mb-3">
+            <span class="inline-flex items-center gap-1.5 rounded-full bg-[#d67d3e]/20 border border-[#d67d3e]/30 px-3.5 py-1 text-xs sm:text-[13px] font-bold uppercase tracking-widest text-[#f59e0b] font-exo2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-current">
+                <path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z"></path>
+              </svg>
+              Direct Carrier Dispatch
+            </span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white tracking-tight uppercase leading-[1.08] mb-8 max-w-4xl mx-auto font-exo2">
+            ONE QUICK CALL DOES IT ALL!
+          </h2>
+
+          <div class="grid w-full max-w-5xl grid-cols-1 gap-4 mx-auto md:grid-cols-3">
+            
+            <!-- Action Card 1: Call Directly -->
+            <div class="w-full">
+              <a href="tel:8887027322" aria-label="Call Car Carrier Group directly at 888-702-7322" class="group flex min-h-36 w-full flex-col items-center justify-center rounded-2xl border border-white/20 bg-white/[0.08] p-5 text-center shadow-lg transition-all duration-200 hover:border-white/40 hover:bg-white/[0.14] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                <div class="mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-[#d67d3e] text-white shadow-md group-hover:scale-105 transition-transform">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-white stroke-none">
+                    <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                  </svg>
+                </div>
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-300 font-exo2">Call us</span>
+                <span class="mt-1 text-xl font-bold tracking-tight text-white transition-colors group-hover:text-amber-300 sm:text-2xl font-exo2">888-702-7322</span>
+              </a>
+            </div>
+
+            <!-- Action Card 2: Get Instant Quote -->
+            <div class="w-full">
+              <a class="group flex min-h-36 w-full flex-col items-center justify-center rounded-2xl bg-white p-5 text-center shadow-xl transition-all duration-200 hover:bg-slate-100 hover:shadow-2xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" href="https://www.carcarriergroup.com/car-shipping-quote?utm_source=ccg-stories&amp;utm_medium=referral&amp;utm_campaign=fullwidth-cta" target="_blank" rel="noopener noreferrer">
+                <span class="flex items-center gap-2 text-lg font-bold uppercase tracking-wide text-[#0d2861] sm:text-xl font-exo2">
+                  Get an Instant Quote
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 transition-transform group-hover:translate-x-1">
+                    <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </span>
+                <span class="mt-3 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-xs font-bold uppercase tracking-wide text-slate-500 font-exo2">
+                  <span>Vehicles</span>
+                  <span><span aria-hidden="true" class="mr-2 text-slate-300">•</span>Freight</span>
+                  <span><span aria-hidden="true" class="mr-2 text-slate-300">•</span>Heavy Equipment</span>
+                </span>
+              </a>
+            </div>
+
+            <!-- Action Card 3: Coming Soon Tool -->
+            <div class="flex min-h-36 w-full flex-col items-center justify-center rounded-2xl border border-[#d67d3e]/50 bg-[#d67d3e]/15 p-5 text-center backdrop-blur-xs">
+              <span class="rounded-full border border-[#f59e0b]/40 bg-[#d67d3e]/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-200 font-exo2">
+                Coming soon
+              </span>
+              <p class="mt-3 text-lg font-bold leading-tight tracking-tight text-white sm:text-xl font-exo2">
+                New Auto Shipping Quote Tool
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Bottom Trust Points -->
+          <div class="mt-8 sm:mt-10 pt-6 border-t border-white/10 flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-xs sm:text-sm font-semibold text-slate-300 font-exo2">
+            <span class="inline-flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#d67d3e]">
+                <circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path>
+              </svg>
+              7-Day-a-Week Staff Access
+            </span>
+            <span class="hidden sm:inline text-white/30">•</span>
+            <span>Accurate Route-Based Pricing</span>
+            <span class="hidden sm:inline text-white/30">•</span>
+            <span>No Upfront Obligation</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER SECTION                                                            -->
+  <!-- ========================================================================= -->
+  <footer class="w-full bg-[#f8fafc] border-t border-slate-300 font-exo2">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-8 pb-14">
+        
+        <!-- Column 1: Brand & Description -->
+        <div class="md:col-span-4 lg:col-span-4 flex flex-col items-start">
+          <a class="mb-6 block" href="./index.html" aria-label="Car Carrier Group Home">
+            <img alt="Car Carrier Group" loading="lazy" width="130" height="70" decoding="async" class="h-16 w-auto object-contain" src="./public/branding/car-carrier-group-logo.png" />
+          </a>
+          <p class="text-xs sm:text-[13px] text-slate-600 font-normal leading-relaxed max-w-xs font-sans">
+            Transportation coordination for vehicles, freight, equipment, and more nationwide.
+          </p>
+        </div>
+
+        <!-- Column 2: Services -->
+        <div class="md:col-span-3 lg:col-span-2 lg:col-start-6">
+          <h4 class="text-sm font-bold text-[#0a192f] mb-4 tracking-tight">Services</h4>
+          <ul class="space-y-3 font-sans">
+            <li><a class="text-xs sm:text-[13px] text-slate-600 hover:text-[#0d2861] transition-colors" href="./services/vehicle-shipping.html">Vehicle Shipping</a></li>
+            <li><a class="text-xs sm:text-[13px] text-slate-600 hover:text-[#0d2861] transition-colors" href="./services/freight.html">Freight</a></li>
+            <li><a class="text-xs sm:text-[13px] text-slate-600 hover:text-[#0d2861] transition-colors" href="./services/heavy-equipment.html">Heavy Equipment</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Company -->
+        <div class="md:col-span-3 lg:col-span-2">
+          <h4 class="text-sm font-bold text-[#0a192f] mb-4 tracking-tight">Company</h4>
+          <ul class="space-y-3 font-sans">
+            <li><a class="text-xs sm:text-[13px] text-slate-600 hover:text-[#0d2861] transition-colors" href="./index.html#stories">Shipment Stories</a></li>
+            <li><a class="text-xs sm:text-[13px] text-slate-600 hover:text-[#0d2861] transition-colors" href="./index.html#resources">Resources</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Connect & Quote -->
+        <div class="md:col-span-2 lg:col-span-3">
+          <h4 class="text-sm font-bold text-[#0a192f] mb-4 tracking-tight">Connect</h4>
+          <p class="text-xs sm:text-[13px] text-slate-600 mb-3 font-sans">Continue to Car Carrier Group's secure quote form.</p>
+          <a class="inline-flex items-center gap-1.5 text-xs sm:text-[13px] font-bold text-[#0d2861] hover:text-[#081a40] transition-colors" href="https://www.carcarriergroup.com/car-shipping-quote?utm_source=ccg-stories&amp;utm_medium=referral&amp;utm_campaign=footer" target="_blank" rel="noopener noreferrer">
+            Request a quote
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] sm:text-xs text-slate-500 font-normal font-sans">
+        <p>© Car Carrier Group. All rights reserved.</p>
+        <p>Quote requests are handled on the Car Carrier Group website.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>
