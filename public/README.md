@@ -26,12 +26,24 @@ public/
 │   ├── hero-carrier-ramp-loading.png          (Slide 6: Carrier hydraulic ramp)
 │   └── hero-car-carrier-fleet-transport.png   (Slide 7: CCG fleet transport)
 ├── stories/
-│   ├── college-student-jeep-compass-houston-to-fairfax.jpg (Featured spotlight story)
-│   ├── pallet-shipping-wacker-neuson-vibratory-compactor.jpg (Story 1: Freight / Heavy)
-│   ├── mazda-cx5-california-to-massachusetts.jpg (Story 2: Vehicle Shipping)
-│   ├── volvo-s90-texas-to-california.jpg         (Story 3: Vehicle Shipping)
-│   ├── ltl-pallet-transport-tool-boxes.jpg       (Story 4: Freight LTL)
-│   ├── humvee-limo-heavy-transport-washington-to-texas.jpg (Story 5: Heavy Equipment)
-│   └── am-general-humvee-m9998-warehouse-move.jpg (Story 6: Heavy / Vehicle Transport)
+│   ├── a-classic-car-dream-delivered-shipping-a-1965-buick-skylark-from-minnesota-to-california.jpg
+│   ├── am-general-humvee-m9998-warehouse-move.jpg
+│   ├── college-student-jeep-compass-houston-to-fairfax.jpg
+│   ├── from-california-to-massachusetts-personalized-car-shipping-service-that-makes-customers-feel-like-1.jpg
+│   ├── from-houston-to-fairfax-a-college-students-car-shipping-experience-with-car-carrier-group.jpg
+│   ├── from-military-hmmwv-transport-to-kubota-tractor-shipping-a-customers-second-experience-with-car-carrier-group.jpg
+│   ├── from-texas-to-california-a-parents-peace-of-mind-with-car-carrier-group.jpg
+│   ├── from-the-bay-area-to-southern-california-a-smooth-car-shipping-experience.jpg
+│   ├── georgia-to-california-a-car-delivered-4-days-ahead-of-schedule.jpg
+│   ├── humvee-delivered-on-time-professional-military-vehicle-transport-you-can-trust.jpg
+│   ├── humvee-limo-heavy-transport-washington-to-texas.jpg
+│   ├── ltl-pallet-transport-tool-boxes.jpg
+│   ├── pallet-shipping-problem-solved-moving-a-wacker-neuson-vibratory-compactor.jpg
+│   ├── pallet-shipping-wacker-neuson-vibratory-compactor.jpg
+│   ├── ship-humvee-limo.jpg
+│   ├── shipping-a-classic-1960-c1-corvette-from-california-to-florida-a-customer-success-story.jpg
+│   ├── transport-tool-boxes-on-pallets.jpg
+│   ├── vehicle-shipping-general-freight-shipping-heavy-equipment-shipping.jpg
+│   └── volvo-s90-texas-to-california.jpg
 └── manifest.json
 ```
